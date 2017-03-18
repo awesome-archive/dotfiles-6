@@ -22,3 +22,4 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 source $HOME/.zsh/config.zsh
+source $HOME/.zsh/alais.zsh
