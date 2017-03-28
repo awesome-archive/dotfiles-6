@@ -11,7 +11,7 @@ Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
 Bundle 'christoomey/vim-run-interactive'
-Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe' "自动补全
 Bundle 'croaky/vim-colors-github'
 Bundle 'danro/rename.vim'
 Bundle 'majutsushi/tagbar'
@@ -25,18 +25,18 @@ Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-surround' "括号跳转
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/tComment'
 Bundle "mattn/emmet-vim"
-Bundle "scrooloose/nerdtree"
+Bundle "scrooloose/nerdtree"    "文件目录
 Bundle "Lokaltog/vim-powerline"
-Bundle "godlygeek/tabular"
-Bundle 'plasticboy/vim-markdown'
+Bundle "godlygeek/tabular"  "文本对齐
+Bundle 'plasticboy/vim-markdown'    "Markdown高亮
 Bundle 'iamcco/mathjax-support-for-mkdp'
-Bundle 'iamcco/markdown-preview.vim'
+Bundle 'iamcco/markdown-preview.vim'    "Markdown预览
 Bundle "msanders/snipmate.vim"
 Bundle "jelera/vim-javascript-syntax"
 Bundle "altercation/vim-colors-solarized"
@@ -48,7 +48,7 @@ Bundle "evanmiller/nginx-vim-syntax"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "tomasr/molokai"
 Bundle "klen/python-mode"
-Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'christoomey/vim-tmux-navigator' "支持vim面板和tmux面板相互跳转
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
