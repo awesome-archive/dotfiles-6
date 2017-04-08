@@ -12,10 +12,15 @@ export JAVA_HOME=/usr/local/jdk1.8.0.121
 
 export CHEATCOLORS=true
 
-#使用Ctrl-p和Ctrl-n代替↑和↓
-bindkey "^p" history-beginning-search-backward
-bindkey "^n" history-beginning-search-forward
-
 #Set tmux 256 color and start tmux
 [ -z "$TMUX" ] && export TERM=xterm-256color && tmux -2 new
 
+#Use vi style
+#bindkey -v
+function zle-line-init zle-keymap-select {
+    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+    RPS2=$RPS1
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select

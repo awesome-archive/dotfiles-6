@@ -14,6 +14,7 @@ antigen bundle pip
 antigen bundle autojump
 antigen bundle command-not-found
 antigen bundle web-search
+antigen bundle vi-mode
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions src
