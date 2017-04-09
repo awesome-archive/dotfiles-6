@@ -24,3 +24,7 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+bindkey "^p" history-beginning-search-backward
+bindkey "^n" history-beginning-search-forward
+
