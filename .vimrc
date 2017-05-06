@@ -25,11 +25,11 @@ call plug#begin('~/.vim/plugged')
 " Plug 'bronson/vim-trailing-whitespace'
 " Plug 'kshenoy/vim-signature'
 " 
-" " tmux integration
-" Plug 'edkolev/tmuxline.vim'
-" Plug 'wellle/tmux-complete.vim'
-" Plug 'christoomey/vim-tmux-navigator'
-" 
+" tmux integration
+Plug 'edkolev/tmuxline.vim'
+Plug 'wellle/tmux-complete.vim'
+Plug 'christoomey/vim-tmux-navigator'
+ 
 " " auto complete
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " Plug 'Valloric/YouCompleteMe'
@@ -40,8 +40,8 @@ call plug#begin('~/.vim/plugged')
 " Plug 'Raimondi/delimitMate'
 " Plug 'tpope/vim-surround'
 " Plug 'tpope/vim-repeat'
-" 
-" " project manager
+ 
+" project manager
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 " Plug 'majutsushi/tagbar'
 " Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky'
@@ -72,9 +72,12 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 " " for indent
 " Plug 'godlygeek/tabular'
 " 
-" " for markdown
+" for markdown
 Plug 'plasticboy/vim-markdown'          " 高亮
 Plug 'iamcco/markdown-preview.vim'      " 预览
+
+" for shell script
+Plug 'WolfgangMehner/bash-support'
  
 " " todo list
 " Plug 'freitass/todo.txt-vim'
@@ -120,7 +123,7 @@ call plug#end()
 " source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/nerdtree.vim
 " source ~/.vim/pluginconfig/tagbar.vim
-" source ~/.vim/pluginconfig/tmuxline.vim
+source ~/.vim/pluginconfig/tmuxline.vim
 " source ~/.vim/pluginconfig/ultisnips.vim
 " source ~/.vim/pluginconfig/visual-star.vim
 " source ~/.vim/pluginconfig/youcompleteme.vim
@@ -128,3 +131,4 @@ source ~/.vim/pluginconfig/nerdtree.vim
 " source ~/.vim/pluginconfig/vim-note.vim
 " source ~/.vim/pluginconfig/cpplint.vim
 " source ~/.vim/pluginconfig/fswitch.vim
+source ~/.vim/pluginconfig/bash-support.vim
