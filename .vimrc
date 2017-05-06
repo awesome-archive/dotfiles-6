@@ -47,7 +47,7 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 " Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky'
 " Plug 'dyng/ctrlsf.vim'
 " Plug 'terryma/vim-multiple-cursors'
-" Plug 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim'
 " "Plug 'xolox/vim-misc' | Plug 'xolox/vim-easytags'
 " Plug 'craigemery/vim-autotag'
 " Plug 'fholgado/minibufexpl.vim'
@@ -110,7 +110,7 @@ call plug#end()
 " +              插件配置               +
 " +++++++++++++++++++++++++++++++++++++++
 
-" source ~/.vim/pluginconfig/ack.vim
+source ~/.vim/pluginconfig/ack.vim
 " source ~/.vim/pluginconfig/acsnum.vim
 " source ~/.vim/pluginconfig/airline.vim
 " source ~/.vim/pluginconfig/autoformat.vim
