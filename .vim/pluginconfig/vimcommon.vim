@@ -32,7 +32,6 @@ filetype plugin indent on
 
 " 改变超过 80 个字符之后的区域，这样就可以起到提示作用
 set colorcolumn=81
-set textwidth=80
 set fo+=mB " 支持中文
 set wrap
 

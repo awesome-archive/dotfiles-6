@@ -61,10 +61,10 @@ Plug 'mileszs/ack.vim'
 " Plug 'Chiel92/vim-autoformat'
 " Plug 'octol/vim-cpp-enhanced-highlight'
 " Plug 'rsaraf/vim-advanced-lint'
-" 
-" " python
-" Plug 'nvie/vim-flake8', {'for': 'python'}
-" 
+ 
+" python
+Plug 'nvie/vim-flake8', {'for': 'python'}
+ 
 " " git
 " Plug 'airblade/vim-gitgutter'
 " Plug 'tpope/vim-fugitive'
