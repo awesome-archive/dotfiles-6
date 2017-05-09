@@ -112,7 +112,7 @@ call plug#end()
 
 source ~/.vim/pluginconfig/ack.vim
 " source ~/.vim/pluginconfig/acsnum.vim
-" source ~/.vim/pluginconfig/airline.vim
+source ~/.vim/pluginconfig/airline.vim
 " source ~/.vim/pluginconfig/autoformat.vim
 " source ~/.vim/pluginconfig/colorscheme.vim
 " source ~/.vim/pluginconfig/ctrlp.vim
