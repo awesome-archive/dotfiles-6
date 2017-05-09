@@ -21,7 +21,7 @@ call plug#begin('~/.vim/plugged')
 " themes
 Plug 'altercation/vim-colors-solarized'
 " Plug 'flazz/vim-colorschemes'
-" Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 " Plug 'bronson/vim-trailing-whitespace'
 " Plug 'kshenoy/vim-signature'
 " 
