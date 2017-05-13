@@ -118,7 +118,7 @@ source ~/.vim/pluginconfig/airline.vim
 " source ~/.vim/pluginconfig/ctrlp.vim
 " source ~/.vim/pluginconfig/ctrlsf.vim
 " source ~/.vim/pluginconfig/doxygentoolkit.vim
-" source ~/.vim/pluginconfig/flake8.vim
+source ~/.vim/pluginconfig/flake8.vim
 " source ~/.vim/pluginconfig/fugitive.vim
 " source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/nerdtree.vim
