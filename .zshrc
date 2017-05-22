@@ -24,3 +24,4 @@ antigen apply
 
 source $HOME/.zsh/config.zsh
 source $HOME/.zsh/alais.zsh
+

@@ -32,8 +32,8 @@ Plug 'christoomey/vim-tmux-navigator'
  
 " " auto complete
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-" Plug 'Valloric/YouCompleteMe'
-" Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'Valloric/YouCompleteMe'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 " Plug 'mattn/emmet-vim'
 " 
 " " parenthes
@@ -126,7 +126,7 @@ source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tmuxline.vim
 " source ~/.vim/pluginconfig/ultisnips.vim
 " source ~/.vim/pluginconfig/visual-star.vim
-" source ~/.vim/pluginconfig/youcompleteme.vim
+source ~/.vim/pluginconfig/youcompleteme.vim
 " source ~/.vim/pluginconfig/vim-autotag.vim
 " source ~/.vim/pluginconfig/vim-note.vim
 " source ~/.vim/pluginconfig/cpplint.vim
