@@ -100,6 +100,7 @@ Plug 'WolfgangMehner/bash-support'
 " Plug 'zhaohuaxishi/auto-header'
 " Plug 'mhinz/vim-startify'
 " Plug 'vim-scripts/tpp.vim'
+Plug 'vim-scripts/fcitx.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
