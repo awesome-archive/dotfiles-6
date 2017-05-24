@@ -41,6 +41,8 @@ flags = [
 '-std=c++11',
 '-x',
 'c++',
+'-isystem',
+'/usr/include/c++/6',
 ]
 
 
