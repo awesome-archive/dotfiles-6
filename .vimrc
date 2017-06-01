@@ -95,7 +95,7 @@ Plug 'WolfgangMehner/bash-support'
 " Plug 'tpope/vim-eunuch'
 " Plug 'tpope/vim-dispatch'
 " Plug 'tpope/vim-endwise'
-" Plug 'zhaohuaxishi/ctrlp-header'
+Plug 'zhaohuaxishi/ctrlp-header'
 " Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
 " Plug 'zhaohuaxishi/auto-header'
 " Plug 'mhinz/vim-startify'
@@ -116,7 +116,7 @@ source ~/.vim/pluginconfig/ack.vim
 source ~/.vim/pluginconfig/airline.vim
 " source ~/.vim/pluginconfig/autoformat.vim
 " source ~/.vim/pluginconfig/colorscheme.vim
-" source ~/.vim/pluginconfig/ctrlp.vim
+source ~/.vim/pluginconfig/ctrlp.vim
 " source ~/.vim/pluginconfig/ctrlsf.vim
 " source ~/.vim/pluginconfig/doxygentoolkit.vim
 source ~/.vim/pluginconfig/flake8.vim
