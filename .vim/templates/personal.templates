@@ -1,0 +1,20 @@
+§ =============================================================
+§  Personal Information
+§ =============================================================
+
+SetMacro( 'AUTHOR',       'Zhang Fan' )
+SetMacro( 'AUTHORREF',    '张帆' )
+SetMacro( 'EMAIL',        'zgzf1001@gmail.com' )
+SetMacro( 'ORGANIZATION', '' )
+SetMacro( 'COMPANY',      'CVTE' )
+SetMacro( 'COPYRIGHT',    'Copyright (c) |YEAR|, |AUTHOR|' )
+SetMacro( 'LICENSE',      'GNU Lesser General Public License' )
+
+§ =============================================================
+§  Date and Time Format
+§ =============================================================
+
+§SetFormat( 'DATE', '%x' )
+§SetFormat( 'TIME', '%H:%M' )
+§SetFormat( 'YEAR', '%Y' )
+

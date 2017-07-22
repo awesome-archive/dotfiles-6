@@ -7,6 +7,7 @@ set nocompatible
 
 " 显示行号
 set number
+" set relativenumber
 
 " 搜索设置
 set ignorecase
@@ -67,8 +68,8 @@ autocmd FileType vim set foldmethod=marker
 " ++++++++++++++++++++++++++++++++++++++++
 
 "nnoremap <F1> :FormatCode<cr>
-"nnoremap <F2> :set number!<cr>
-"nnoremap <F3> :set paste!<cr>
+nnoremap <F2> :set number!<cr>
+nnoremap <F3> :set paste!<cr>
 "nnoremap <F4> :set hlsearch!<cr>
 
 "nnoremap <F9> :TagbarToggle<cr>
@@ -80,7 +81,6 @@ autocmd FileType vim set foldmethod=marker
 
 " 绑定 jk <Esc>，这样就不用按角落里面的 <Esc>
 inoremap jk <Esc>
-"inoremap <C-l> <Esc>
 
 " 绑定 space 到 : 按键
 noremap <space> :
@@ -94,8 +94,8 @@ nnoremap ' `
 nnoremap ` '
 
 " 使用更合理的大小写切换
-"nnoremap gu gU
-"nnoremap gl gu
+nnoremap gu gU
+nnoremap gl gu
 
 " 使用超级用户权限编辑这个文件
 cmap w!! w !sudo tee >/dev/null %

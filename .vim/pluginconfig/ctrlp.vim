@@ -10,11 +10,11 @@ nnoremap <silent> <Leader>f :CtrlPFunky<Cr>
 nnoremap <silent> <Leader>l :CtrlPLine<Cr>
 nnoremap <silent> <Leader>i :CtrlPHeader<CR>
 nnoremap <silent> <Leader>e :CtrlPEHeader<CR>
-nnoremap <silent> <Leader><Leader> :CtrlPCmdPalette<CR>
+" nnoremap <silent> <Leader><Leader> :CtrlPCmdPalette<CR>
 
 let g:ctrlp_funky_matchtype = 'path'
 
-let g:ctrlp_extensions = ['line', 'tag']
+let g:ctrlp_extensions = ['line', 'tag', 'funky']
 
 " use ag to list file
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
