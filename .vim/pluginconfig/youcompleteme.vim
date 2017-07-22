@@ -46,7 +46,7 @@ let g:ycm_filetype_blacklist = {
 nnoremap <leader>gt :YcmCompleter GoToDefinitionElseDeclaration<cr>
 nnoremap <leader>gg :YcmCompleter GoToDefinition<cr>
 nnoremap <leader>gd :YcmCompleter GoToDeclaration<cr>
-nnoremap <leader>f :YcmCompleter FixIt<cr>
+nnoremap <leader>fi :YcmCompleter FixIt<cr>
 
 let g:ycm_error_symbol = "➠"
 let g:ycm_warning_symbol = "⚠"
