@@ -32,14 +32,14 @@ Plug 'christoomey/vim-tmux-navigator' " tmux窗口与vim窗口无缝切换
 
 " 自动补全
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets' " 代码块自动补全
-Plug 'Valloric/YouCompleteMe' " 语义补全，跳转
+Plug 'Valloric/YouCompleteMe'                       " 语义补全，跳转
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} " 需要先安装clang++
 " Plug 'mattn/emmet-vim'    " 指令补全
 
 " parenthes
 Plug 'Raimondi/delimitMate' " 符号对自动补全
-Plug 'tpope/vim-surround' "添/删/改符号对，ds：删除，cs：修改 ys：添加
-Plug 'tpope/vim-repeat' "使得插件命令可以重复（否则可能只能重复一部分）
+Plug 'tpope/vim-surround'   " 添/删/改符号对，ds：删除，cs：修改 ys：添加
+Plug 'tpope/vim-repeat'     " 使得插件命令可以重复（否则可能只能重复一部分）
 
 " project manager
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
@@ -54,11 +54,11 @@ Plug 'mileszs/ack.vim'
 "
 " " commenter
 " Plug 'scrooloose/nerdcommenter'
-" Plug 'DoxygenToolkit.vim'
-"
+Plug 'vim-scripts/DoxygenToolkit.vim'
+
 " " cpp dev
 " Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']} | Plug 'derekwyatt/vim-protodef'
-" Plug 'Chiel92/vim-autoformat'
+Plug 'Chiel92/vim-autoformat'
 " Plug 'octol/vim-cpp-enhanced-highlight'
 " Plug 'rsaraf/vim-advanced-lint'
 
@@ -70,7 +70,7 @@ Plug 'nvie/vim-flake8', {'for': 'python'}
 " Plug 'tpope/vim-fugitive'
 "
 " " for indent
-" Plug 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 "
 " for markdown
 Plug 'plasticboy/vim-markdown'          " 高亮
@@ -95,7 +95,7 @@ Plug 'WolfgangMehner/bash-support'      " 设置面板打开方式为,ntw
 " Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-dispatch' "在quickfix中执行命令
 " Plug 'tpope/vim-endwise'
-" Plug 'zhaohuaxishi/ctrlp-header'
+Plug 'zhaohuaxishi/ctrlp-header'
 " Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
 " Plug 'zhaohuaxishi/auto-header'
 " Plug 'mhinz/vim-startify'
@@ -114,11 +114,11 @@ call plug#end()
 source ~/.vim/pluginconfig/ack.vim
 " source ~/.vim/pluginconfig/acsnum.vim
 source ~/.vim/pluginconfig/airline.vim
-" source ~/.vim/pluginconfig/autoformat.vim
+source ~/.vim/pluginconfig/autoformat.vim
 " source ~/.vim/pluginconfig/colorscheme.vim
 source ~/.vim/pluginconfig/ctrlp.vim
 source ~/.vim/pluginconfig/ctrlsf.vim
-" source ~/.vim/pluginconfig/doxygentoolkit.vim
+source ~/.vim/pluginconfig/doxygentoolkit.vim
 source ~/.vim/pluginconfig/flake8.vim
 " source ~/.vim/pluginconfig/fugitive.vim
 " source ~/.vim/pluginconfig/nerdcommenter.vim
