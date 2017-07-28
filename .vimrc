@@ -77,7 +77,8 @@ Plug 'plasticboy/vim-markdown'          " 高亮
 Plug 'iamcco/markdown-preview.vim'      " 预览
 
 " for shell script
-Plug 'WolfgangMehner/bash-support'      " 设置面板打开方式为,ntw
+" 使用过少且和tmux-navigator冲突
+" Plug 'WolfgangMehner/bash-support'      " 设置面板打开方式为,ntw
 
 " " todo list
 " Plug 'freitass/todo.txt-vim'
@@ -132,4 +133,4 @@ source ~/.vim/pluginconfig/youcompleteme.vim
 " source ~/.vim/pluginconfig/vim-note.vim
 " source ~/.vim/pluginconfig/cpplint.vim
 " source ~/.vim/pluginconfig/fswitch.vim
-source ~/.vim/pluginconfig/bash-support.vim
+" source ~/.vim/pluginconfig/bash-support.vim
