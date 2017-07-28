@@ -69,7 +69,7 @@ autocmd FileType vim set foldmethod=marker
 
 "nnoremap <F1> :FormatCode<cr>
 nnoremap <F2> :set number!<cr>
-nnoremap <F3> :set paste!<cr>
+nnoremap <F5> :set paste!<cr>
 "nnoremap <F4> :set hlsearch!<cr>
 
 "nnoremap <F9> :TagbarToggle<cr>
