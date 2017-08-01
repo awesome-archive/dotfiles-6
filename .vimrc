@@ -84,13 +84,18 @@ Plug 'iamcco/markdown-preview.vim'      " 预览
 " Plug 'freitass/todo.txt-vim'
 "
 " " text-object
-" Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
-" Plug 'lucapette/vim-textobj-underscore', {'for': ['python', 'cpp', 'c']}
-" Plug 'kana/vim-textobj-line'
-" Plug 'kana/vim-textobj-indent', {'for': 'python'}
-" Plug 'kana/vim-textobj-function'
-" Plug 'terryma/vim-expand-region'
-"
+" ae/ie 全选
+Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
+" a_/i_下划线之间
+Plug 'lucapette/vim-textobj-underscore', {'for': ['python', 'cpp', 'c']}
+" al/il 当前行
+Plug 'kana/vim-textobj-line'
+" ai/ii 相同缩进块/ aI/iI 相同缩进的行
+Plug 'kana/vim-textobj-indent', {'for': 'python'}
+" af/if and aF/iF 函数块
+Plug 'kana/vim-textobj-function'
+Plug 'terryma/vim-expand-region'
+
 " " other
 " Plug 'tpope/vim-unimpaired'
 " Plug 'tpope/vim-eunuch'
