@@ -27,5 +27,3 @@ zle -N zle-keymap-select
 
 bindkey "^p" history-beginning-search-backward
 bindkey "^n" history-beginning-search-forward
-
-eval $(thefuck --alias)
