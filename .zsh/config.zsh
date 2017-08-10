@@ -8,8 +8,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
 export PATH=/usr/local/bin:$PATH
 
-export JAVA_HOME=/usr/local/jdk1.8.0.141
-
 export CHEATCOLORS=true
 
 #Set tmux 256 color and start tmux

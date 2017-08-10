@@ -65,9 +65,9 @@ Plug 'Chiel92/vim-autoformat'
 " python
 Plug 'nvie/vim-flake8', {'for': 'python'}
 
-" " git
-" Plug 'airblade/vim-gitgutter'
-" Plug 'tpope/vim-fugitive'
+" git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 "
 " " for indent
 Plug 'godlygeek/tabular'
@@ -126,7 +126,7 @@ source ~/.vim/pluginconfig/ctrlp.vim
 source ~/.vim/pluginconfig/ctrlsf.vim
 source ~/.vim/pluginconfig/doxygentoolkit.vim
 source ~/.vim/pluginconfig/flake8.vim
-" source ~/.vim/pluginconfig/fugitive.vim
+source ~/.vim/pluginconfig/fugitive.vim
 " source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tagbar.vim
