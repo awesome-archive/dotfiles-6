@@ -60,7 +60,7 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 " Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']} | Plug 'derekwyatt/vim-protodef'
 Plug 'Chiel92/vim-autoformat'
 " Plug 'octol/vim-cpp-enhanced-highlight'
-" Plug 'rsaraf/vim-advanced-lint'
+Plug 'rsaraf/vim-advanced-lint'
 
 " python
 Plug 'nvie/vim-flake8', {'for': 'python'}
@@ -104,7 +104,7 @@ Plug 'tpope/vim-dispatch' "在quickfix中执行命令
 Plug 'zhaohuaxishi/ctrlp-header'
 " Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
 " Plug 'zhaohuaxishi/auto-header'
-" Plug 'mhinz/vim-startify'
+Plug 'mhinz/vim-startify'
 " Plug 'vim-scripts/tpp.vim'
 Plug 'vim-scripts/fcitx.vim'
 
@@ -136,6 +136,6 @@ source ~/.vim/pluginconfig/ultisnips.vim
 source ~/.vim/pluginconfig/youcompleteme.vim
 " source ~/.vim/pluginconfig/vim-autotag.vim
 " source ~/.vim/pluginconfig/vim-note.vim
-" source ~/.vim/pluginconfig/cpplint.vim
+source ~/.vim/pluginconfig/cpplint.vim
 " source ~/.vim/pluginconfig/fswitch.vim
 " source ~/.vim/pluginconfig/bash-support.vim

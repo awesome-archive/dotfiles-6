@@ -13,7 +13,6 @@ antigen bundle sudo
 antigen bundle pip
 antigen bundle autojump
 antigen bundle command-not-found
-antigen bundle web-search
 antigen bundle vi-mode
 antigen bundle z
 
@@ -23,5 +22,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
 
-source $HOME/.zsh/config.zsh
 source $HOME/.zsh/alais.zsh
+source $HOME/.zsh/bindkey.zsh
+source $HOME/.zsh/config.zsh
