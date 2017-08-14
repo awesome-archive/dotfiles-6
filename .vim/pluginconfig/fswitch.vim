@@ -1,4 +1,7 @@
 " vim-fswitch "
 """""""""""""""
 
-let b:fswitchdst = 'cpp,cc,C'
+au! BufEnter *.cc let b:fswitchdst = 'hpp,h'
+au! BufEnter *.h let b:fswitchdst = 'cpp,cc'
+
+nmap <silent> <Leader>fs :FSHere<cr>

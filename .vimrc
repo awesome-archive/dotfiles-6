@@ -51,19 +51,22 @@ Plug 'mileszs/ack.vim'
 " "Plug 'xolox/vim-misc' | Plug 'xolox/vim-easytags'
 " Plug 'craigemery/vim-autotag'
 " Plug 'fholgado/minibufexpl.vim'
-"
-" " commenter
-" Plug 'scrooloose/nerdcommenter'
+
+" commenter
+Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 
-" " cpp dev
-" Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']} | Plug 'derekwyatt/vim-protodef'
+" cpp dev
+Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']}
 Plug 'Chiel92/vim-autoformat'
-" Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'rsaraf/vim-advanced-lint'
 
 " python
 Plug 'nvie/vim-flake8', {'for': 'python'}
+
+" CSS/QSS
+Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'qss']}
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -127,7 +130,7 @@ source ~/.vim/pluginconfig/ctrlsf.vim
 source ~/.vim/pluginconfig/doxygentoolkit.vim
 source ~/.vim/pluginconfig/flake8.vim
 source ~/.vim/pluginconfig/fugitive.vim
-" source ~/.vim/pluginconfig/nerdcommenter.vim
+source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tagbar.vim
 source ~/.vim/pluginconfig/tmuxline.vim
@@ -137,5 +140,6 @@ source ~/.vim/pluginconfig/youcompleteme.vim
 " source ~/.vim/pluginconfig/vim-autotag.vim
 " source ~/.vim/pluginconfig/vim-note.vim
 source ~/.vim/pluginconfig/cpplint.vim
-" source ~/.vim/pluginconfig/fswitch.vim
+source ~/.vim/pluginconfig/fswitch.vim
 " source ~/.vim/pluginconfig/bash-support.vim
+source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
