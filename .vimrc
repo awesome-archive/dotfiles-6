@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
 
 " 主题
 Plug 'altercation/vim-colors-solarized'
-" Plug 'flazz/vim-colorschemes'
+Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'bronson/vim-trailing-whitespace' " 显示空格 :FixWhitespace
 Plug 'kshenoy/vim-signature'    " 右侧显示标记
@@ -71,10 +71,10 @@ Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'qss']}
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-"
-" " for indent
+
+" for indent
 Plug 'godlygeek/tabular'
-"
+
 " for markdown
 Plug 'plasticboy/vim-markdown'          " 高亮
 Plug 'iamcco/markdown-preview.vim'      " 预览
@@ -85,8 +85,11 @@ Plug 'iamcco/markdown-preview.vim'      " 预览
 
 " " todo list
 " Plug 'freitass/todo.txt-vim'
-"
-" " text-object
+
+" undo
+Plug 'sjl/gundo.vim'
+
+" text-object
 " ae/ie 全选
 Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
 " a_/i_下划线之间
@@ -124,7 +127,7 @@ source ~/.vim/pluginconfig/ack.vim
 " source ~/.vim/pluginconfig/acsnum.vim
 source ~/.vim/pluginconfig/airline.vim
 source ~/.vim/pluginconfig/autoformat.vim
-" source ~/.vim/pluginconfig/colorscheme.vim
+source ~/.vim/pluginconfig/colorscheme.vim
 source ~/.vim/pluginconfig/ctrlp.vim
 source ~/.vim/pluginconfig/ctrlsf.vim
 source ~/.vim/pluginconfig/doxygentoolkit.vim
@@ -143,3 +146,4 @@ source ~/.vim/pluginconfig/cpplint.vim
 source ~/.vim/pluginconfig/fswitch.vim
 " source ~/.vim/pluginconfig/bash-support.vim
 source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
+source ~/.vim/pluginconfig/gundo.vim

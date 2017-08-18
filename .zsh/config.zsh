@@ -25,3 +25,6 @@ zle -N zle-keymap-select
 
 bindkey "^p" history-beginning-search-backward
 bindkey "^n" history-beginning-search-forward
+
+export GOPATH=$HOME/App/go
+export PATH=$PATH:$HOME/App/go/bin

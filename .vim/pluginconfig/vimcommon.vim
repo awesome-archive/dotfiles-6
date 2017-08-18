@@ -63,6 +63,9 @@ set listchars=tab:▸\ ,eol:¬
 " vim 类型文件设置折叠方式为 marker
 autocmd FileType vim set foldmethod=marker
 
+" 保存配置文件时自动载入
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
+
 " ++++++++++++++++++++++++++++++++++++++++
 " +             快捷键配置               +
 " ++++++++++++++++++++++++++++++++++++++++
@@ -79,8 +82,9 @@ nnoremap <F5> :set paste!<cr>
 "nnoremap <F12> "=strftime("%F")<CR>gP
 "inoremap <F12> <C-R>=strftime("%F")<CR>
 
-" 绑定 jk <Esc>，这样就不用按角落里面的 <Esc>
+" 绑定 jk/kj <Esc>，这样就不用按角落里面的 <Esc>
 inoremap jk <Esc>
+inoremap kj <Esc>
 
 " 绑定 space 到 : 按键
 noremap <space> :
@@ -105,6 +109,11 @@ let mapleader = ';'
 let maplocalleader = ','
 noremap + ;
 noremap - ,
+
+" 开启保存 undo 历史功能
+set undofile
+" undo 历史保存路径
+set undodir=~/.undo_history/
 
 " 使用 %% 扩展当前文件的路径
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -132,6 +141,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 nnoremap <C-p> "+gp
+vnoremap <C-y> "+y
 
 "function s:ToggleAutoChdir()
     "let cwd = getcwd()

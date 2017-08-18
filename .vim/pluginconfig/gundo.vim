@@ -1,4 +1,5 @@
 " Gundo "
 """""""""
 
-nnoremap <Leader>u :GundoToggle<CR>
+noremap <Leader>u :GundoToggle<CR>
+let g:gundo_prefer_python3 = 1

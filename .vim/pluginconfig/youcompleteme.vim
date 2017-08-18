@@ -34,8 +34,8 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
 
 "youcompleteme  默认tab  s-tab 和 ultisnips 冲突
-let g:ycm_key_list_select_completion = ['C-j']
-let g:ycm_key_list_previous_completion = ['C-k']
+"let g:ycm_key_list_select_completion = ['C-j']
+"let g:ycm_key_list_previous_completion = ['C-k']
 
 " 设置在下面几种格式的文件上屏蔽ycm
 let g:ycm_filetype_blacklist = {
