@@ -11,7 +11,7 @@ export PATH=/usr/local/bin:$PATH
 export CHEATCOLORS=true
 
 #Set tmux 256 color and start tmux
-[ -z "$TMUX" ] && export TERM=xterm-256color && tmux -2 new
+[ -z "$TMUX" ] && export TERM=screen-256color && tmux -2 new
 
 #Use vi style
 #bindkey -v

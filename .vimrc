@@ -58,7 +58,7 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " cpp dev
 Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']}
-Plug 'Chiel92/vim-autoformat'
+Plug 'rhysd/vim-clang-format'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'rsaraf/vim-advanced-lint'
 
@@ -109,7 +109,7 @@ Plug 'tpope/vim-dispatch' "在quickfix中执行命令
 " Plug 'tpope/vim-endwise'
 Plug 'zhaohuaxishi/ctrlp-header'
 " Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
-" Plug 'zhaohuaxishi/auto-header'
+Plug 'zhaohuaxishi/auto-header'
 Plug 'mhinz/vim-startify'
 " Plug 'vim-scripts/tpp.vim'
 Plug 'vim-scripts/fcitx.vim'
@@ -126,7 +126,6 @@ call plug#end()
 source ~/.vim/pluginconfig/ack.vim
 " source ~/.vim/pluginconfig/acsnum.vim
 source ~/.vim/pluginconfig/airline.vim
-source ~/.vim/pluginconfig/autoformat.vim
 source ~/.vim/pluginconfig/colorscheme.vim
 source ~/.vim/pluginconfig/ctrlp.vim
 source ~/.vim/pluginconfig/ctrlsf.vim

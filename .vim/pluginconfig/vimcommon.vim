@@ -159,7 +159,6 @@ if has("autocmd")
 
     autocmd FileType c,cpp let b:autoformat_autoindent=0
     autocmd BufNewFile *.cpp,*.c,*.h,*.hpp 0r ~/.vim/pluginconfig/license.txt
-    autocmd FileType cpp map <buffer> <F3> :call Cpplint()<CR>
     " 使qss文件可以被css文件插件支持
     autocmd BufNewFile,BufFilePre,BufRead *.qss set filetype=css
 endif
