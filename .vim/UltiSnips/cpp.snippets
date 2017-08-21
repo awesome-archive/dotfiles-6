@@ -27,6 +27,27 @@ private:
 };
 endsnippet
 
+snippet qcl "class .. (QWidget class)"
+#include <QWidget>
+
+class ${1:`!p
+basename =  snip.basename or "name"
+
+tokens = basename.split('_')
+tokens = [token.title() for token in tokens]
+
+snip.rv = "".join(tokens)
+`} : public ${2:QWidget} {
+	Q_OBJECT
+
+public:
+	explicit ${1/(\w+).*/$1/}(${3:arguments, }QWidget *parent = nullptr);
+
+private:
+	${0:/* data */}
+};
+endsnippet
+
 snippet try "try ... catch"
 try {
 	${0:${VISUAL}}
@@ -37,10 +58,12 @@ endsnippet
 
 snippet ns "namespace" m
 namespace ${1}{
-	${2:${VISUAL}}
+
+${2:${VISUAL}}
+
 }  // namespace $1
 endsnippet
 
 snippet todo "add to do task"
-// TODO(zhangfan3427) ${1}
+// TODO(guorongfei) ${1}
 endsnippet

@@ -10,6 +10,7 @@ export PATH=/usr/local/bin:$PATH
 
 export CHEATCOLORS=true
 
+eval `dircolors ~/.dircolors`
 #Set tmux 256 color and start tmux
 [ -z "$TMUX" ] && export TERM=screen-256color && tmux -2 new
 
