@@ -28,20 +28,20 @@ private:
 endsnippet
 
 snippet qcl "class .. (QWidget class)"
-#include <QWidget>
+#include <${1:QWidget}>
 
-class ${1:`!p
+class ${2:`!p
 basename =  snip.basename or "name"
 
 tokens = basename.split('_')
 tokens = [token.title() for token in tokens]
 
 snip.rv = "".join(tokens)
-`} : public ${2:QWidget} {
+`} : public $1 {
 	Q_OBJECT
 
 public:
-	explicit ${1/(\w+).*/$1/}(${3:arguments, }QWidget *parent = nullptr);
+	explicit ${2/(\w+).*/$1/}(${3:arguments, }QWidget *parent = nullptr);
 
 private:
 	${0:/* data */}
@@ -65,5 +65,5 @@ ${2:${VISUAL}}
 endsnippet
 
 snippet todo "add to do task"
-// TODO(guorongfei) ${1}
+// TODO(Zhang Fan) ${1}
 endsnippet
