@@ -82,9 +82,11 @@ nnoremap <F5> :set paste!<cr>
 "nnoremap <F12> "=strftime("%F")<CR>gP
 "inoremap <F12> <C-R>=strftime("%F")<CR>
 
-" 绑定 jk/kj <Esc>，这样就不用按角落里面的 <Esc>
-inoremap jk <Esc>
-inoremap kj <Esc>
+"" 绑定 jk/kj <Esc>，这样就不用按角落里面的 <Esc>
+"inoremap jk <Esc>
+"inoremap kj <Esc>
+" [test] 双击单引号退出
+inoremap ‘’ <Esc>
 
 " 绑定 space 到 : 按键
 noremap <space> :
