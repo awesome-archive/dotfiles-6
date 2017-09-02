@@ -46,11 +46,8 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'majutsushi/tagbar' "需安装ctags-exuberant，显示代码结构信息
 Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky' "文件/函数查找
 Plug 'dyng/ctrlsf.vim'
-" Plug 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
-" "Plug 'xolox/vim-misc' | Plug 'xolox/vim-easytags'
-" Plug 'craigemery/vim-autotag'
-" Plug 'fholgado/minibufexpl.vim'
 
 " commenter
 Plug 'scrooloose/nerdcommenter'
@@ -61,6 +58,9 @@ Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']}
 Plug 'rhysd/vim-clang-format'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'rsaraf/vim-advanced-lint'
+Plug 'szw/vim-tags'
+Plug 'ivalkeen/vim-ctrlp-tjump'
+Plug 'rhysd/clever-f.vim'
 
 " python
 Plug 'nvie/vim-flake8', {'for': 'python'}
@@ -103,16 +103,16 @@ Plug 'kana/vim-textobj-function'
 Plug 'terryma/vim-expand-region'
 
 " " other
-" Plug 'tpope/vim-unimpaired'
-" Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-dispatch' "在quickfix中执行命令
-" Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-endwise'
 Plug 'zhaohuaxishi/ctrlp-header'
-" Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
+Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
 Plug 'zhaohuaxishi/auto-header'
 Plug 'mhinz/vim-startify'
-" Plug 'vim-scripts/tpp.vim'
 Plug 'vim-scripts/fcitx.vim'
+Plug 'easymotion/vim-easymotion'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -137,7 +137,7 @@ source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tagbar.vim
 source ~/.vim/pluginconfig/tmuxline.vim
 source ~/.vim/pluginconfig/ultisnips.vim
-" source ~/.vim/pluginconfig/visual-star.vim
+source ~/.vim/pluginconfig/visual-star.vim
 source ~/.vim/pluginconfig/youcompleteme.vim
 " source ~/.vim/pluginconfig/vim-autotag.vim
 " source ~/.vim/pluginconfig/vim-note.vim
@@ -146,3 +146,5 @@ source ~/.vim/pluginconfig/fswitch.vim
 " source ~/.vim/pluginconfig/bash-support.vim
 source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
 source ~/.vim/pluginconfig/gundo.vim
+source ~/.vim/pluginconfig/vim-tags.vim
+source ~/.vim/pluginconfig/easymotion.vim
