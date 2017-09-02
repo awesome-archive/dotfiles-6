@@ -8,3 +8,5 @@ alias aria2="aria2c --conf=/home/zix/.aria2/aria2.conf"
 
 eval $(thefuck --alias)
 alias fix="fuck"
+
+alias make="make -j4"
