@@ -42,6 +42,7 @@ Plug 'tpope/vim-surround'   " 添/删/改符号对，ds：删除，cs：修改 y
 Plug 'tpope/vim-repeat'     " 使得插件命令可以重复（否则可能只能重复一部分）
 
 " project manager
+Plug 'octref/RootIgnore' " 读取.gitignore 作为wildignore
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'majutsushi/tagbar' "需安装ctags-exuberant，显示代码结构信息
 Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky' "文件/函数查找
@@ -82,9 +83,6 @@ Plug 'iamcco/markdown-preview.vim'      " 预览
 " for shell script
 " 使用过少且和tmux-navigator冲突
 " Plug 'WolfgangMehner/bash-support'      " 设置面板打开方式为,ntw
-
-" " todo list
-" Plug 'freitass/todo.txt-vim'
 
 " undo
 Plug 'sjl/gundo.vim'
@@ -133,6 +131,7 @@ source ~/.vim/pluginconfig/doxygentoolkit.vim
 source ~/.vim/pluginconfig/flake8.vim
 source ~/.vim/pluginconfig/fugitive.vim
 source ~/.vim/pluginconfig/nerdcommenter.vim
+source ~/.vim/pluginconfig/rootignore.vim
 source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tagbar.vim
 source ~/.vim/pluginconfig/tmuxline.vim
