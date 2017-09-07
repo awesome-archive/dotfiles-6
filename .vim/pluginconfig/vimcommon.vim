@@ -36,6 +36,9 @@ set colorcolumn=81
 set fo+=mB " 支持中文
 set wrap
 
+" 自动载入外部修改
+set autoread
+
 " 编码设置
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,GB2312,big5
