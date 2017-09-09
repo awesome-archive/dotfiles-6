@@ -10,3 +10,6 @@ eval $(thefuck --alias)
 alias fix="fuck"
 
 alias make="make -j4"
+
+
+alias cdbuild="if [ -d \"./build\" ]; then cd build; else mkdir build && cd build; fi"
