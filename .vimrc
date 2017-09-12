@@ -99,8 +99,10 @@ Plug 'kana/vim-textobj-indent', {'for': 'python'}
 " af/if and aF/iF 函数块
 Plug 'kana/vim-textobj-function'
 Plug 'terryma/vim-expand-region'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'sgur/vim-textobj-parameter'
 
-" " other
+" other
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-dispatch' "在quickfix中执行命令
@@ -111,6 +113,10 @@ Plug 'zhaohuaxishi/auto-header'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/fcitx.vim'
 Plug 'easymotion/vim-easymotion'
+
+" uml
+Plug 'scrooloose/vim-slumlord'
+Plug 'aklt/plantuml-syntax'
 
 " Add plugins to &runtimepath
 call plug#end()
