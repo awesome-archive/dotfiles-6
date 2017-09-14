@@ -3,8 +3,8 @@
 export EDITOR="vim"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
-#export TODOTXT_DEFAULT_ACTION=ls
-#alias t='todo-txt'
+
+setxkbmap -option ctrl:nocaps
 
 export PATH=/usr/local/bin:$PATH
 
