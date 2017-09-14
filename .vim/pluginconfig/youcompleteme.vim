@@ -13,7 +13,7 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 let g:ycm_confirm_extra_conf=0
 
 " 开启基于tag的补全，可以在这之后添加需要的标签路径
-let g:ycm_collect_identifiers_from_tags_files=1
+let g:ycm_collect_identifiers_from_tags_files=0
 
 "注释和字符串中的文字也会被收入补全
 let g:ycm_collect_identifiers_from_comments_and_strings = 0
@@ -33,19 +33,15 @@ let g:ycm_complete_in_comments = 1
 "在字符串输入中也能补全
 let g:ycm_complete_in_strings = 1
 
-"youcompleteme  默认tab  s-tab 和 ultisnips 冲突
-"let g:ycm_key_list_select_completion = ['C-j']
-"let g:ycm_key_list_previous_completion = ['C-k']
-
 " 设置在下面几种格式的文件上屏蔽ycm
 let g:ycm_filetype_blacklist = {
             \ 'tagbar' : 1,
             \ 'nerdtree' : 1,
             \}
 
-nnoremap <leader>gt :YcmCompleter GoToDefinitionElseDeclaration<cr>
-nnoremap <leader>gg :YcmCompleter GoToDefinition<cr>
-nnoremap <leader>gd :YcmCompleter GoToDeclaration<cr>
+"nnoremap <leader>gt :YcmCompleter GoToDefinitionElseDeclaration<cr>
+"nnoremap <leader>gg :YcmCompleter GoToDefinition<cr>
+"nnoremap <leader>gd :YcmCompleter GoToDeclaration<cr>
 nnoremap <leader>fi :YcmCompleter FixIt<cr>
 
 let g:ycm_error_symbol = "➠"

@@ -2,6 +2,4 @@
 """"""""""""""
 map <Leader> <Plug>(easymotion-prefix)
 
-" s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-bd-f)
-
+let g:EasyMotion_smartcase = 1
