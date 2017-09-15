@@ -23,6 +23,7 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+export KEYTIMEOUT=1
 
 bindkey "^p" history-beginning-search-backward
 bindkey "^n" history-beginning-search-forward
