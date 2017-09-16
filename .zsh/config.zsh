@@ -3,8 +3,8 @@
 export EDITOR="vim"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
-#export TODOTXT_DEFAULT_ACTION=ls
-#alias t='todo-txt'
+
+setxkbmap -option ctrl:nocaps
 
 export PATH=/usr/local/bin:$PATH
 
@@ -23,6 +23,7 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+export KEYTIMEOUT=1
 
 bindkey "^p" history-beginning-search-backward
 bindkey "^n" history-beginning-search-forward

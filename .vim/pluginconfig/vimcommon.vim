@@ -7,7 +7,11 @@ set nocompatible
 
 " 显示行号
 set number
-" set relativenumber
+set relativenumber
+
+" j/k在没有计数的时候按虚拟行移动，有计数的时候按实际行移动
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
 
 " 搜索设置
 set ignorecase
@@ -54,6 +58,7 @@ set wildmode=full
 set foldmethod=syntax
 set nofoldenable
 
+
 " 不使用 swapfile
 set noswapfile
 
@@ -73,21 +78,8 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 " +             快捷键配置               +
 " ++++++++++++++++++++++++++++++++++++++++
 
-"nnoremap <F1> :FormatCode<cr>
-nnoremap <F2> :set number!<cr>
-nnoremap <F5> :set paste!<cr>
-"nnoremap <F4> :set hlsearch!<cr>
-
-"nnoremap <F9> :TagbarToggle<cr>
-"nnoremap <F10> :NERDTreeToggle<cr>
-
-" insert current time
-"nnoremap <F12> "=strftime("%F")<CR>gP
-"inoremap <F12> <C-R>=strftime("%F")<CR>
-
-" 绑定 jk/kj <Esc>，这样就不用按角落里面的 <Esc>
+" 绑定 jk <Esc>，这样就不用按角落里面的 <Esc>
 inoremap jk <Esc>
-inoremap kj <Esc>
 
 " 绑定 space 到 : 按键
 noremap <space> :
@@ -99,10 +91,6 @@ noremap L $
 " 交换 ' 和 ` 的功能
 nnoremap ' `
 nnoremap ` '
-
-" 使用更合理的大小写切换
-nnoremap gu gU
-nnoremap gl gu
 
 " 使用超级用户权限编辑这个文件
 cmap w!! w !sudo tee >/dev/null %
@@ -125,36 +113,33 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
-" 输入模式下快速的移动光标
-"inoremap <C-k> <Up>
-"inoremap <C-j> <Down>
-"inoremap <C-h> <Left>
-"inoremap <C-l> <Right>
-"inoremap <C-a> <Home>
-"inoremap <C-e> <End>
-
 " 命令行模式 Ctrl-j 下一条命令，Ctrl-k 上一条命令
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
-" 修改 vimrc 的快捷方式
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-
+" 系统剪贴板复制与粘贴
 nnoremap <C-p> "+gp
 vnoremap <C-y> "+y
 
-"function s:ToggleAutoChdir()
-    "let cwd = getcwd()
-    "if stridx(cwd, "build") == -1
-        "echo "autochdir"
-        "execute 'set autochdir'
-    "endif
-"endfunction
+" 打开/关闭quickfix
+nnoremap <leader>q :call QuickfixToggle()<cr>
 
-nnoremap coa :set autochdir!<CR> :set autochdir?<CR>
+let g:quickfix_is_open = 0
+
+function! QuickfixToggle()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open = 0
+    else
+        copen
+        let g:quickfix_is_open = 1
+    endif
+endfunction
+
+" 字体
+set guifont=FuraCode\ Nerd\ Font\ Mono\ 10
 
 if has("autocmd")
     "autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
