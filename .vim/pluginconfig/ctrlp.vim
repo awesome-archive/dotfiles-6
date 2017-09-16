@@ -1,7 +1,7 @@
 " CtrlP "
 """""""""
 
-let g:ctrlp_map = '<Leader>p'
+let g:ctrlp_map = '<Leader>f'
 
 "nnoremap <silent> <Leader>p :CtrlP<CR>
 nnoremap <silent> <Leader>m :CtrlPMRU<CR>
