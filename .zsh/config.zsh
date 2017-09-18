@@ -15,7 +15,6 @@ eval `dircolors ~/.dircolors`
 [ -z "$TMUX" ] && export TERM=screen-256color && tmux -2 new
 
 #Use vi style
-#bindkey -v
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
     RPS2=$RPS1
@@ -23,10 +22,8 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+# 按键延时为1ms
 export KEYTIMEOUT=1
-
-bindkey "^p" history-beginning-search-backward
-bindkey "^n" history-beginning-search-forward
 
 export GOPATH=$HOME/App/go
 export PATH=$PATH:$HOME/App/go/bin

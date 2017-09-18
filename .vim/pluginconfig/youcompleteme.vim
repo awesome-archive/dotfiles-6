@@ -39,7 +39,7 @@ let g:ycm_filetype_blacklist = {
             \ 'nerdtree' : 1,
             \}
 
-nnoremap  CTRL-f:YcmCompleter FixIt<cr>
+nnoremap  <C-f>:YcmCompleter FixIt<cr>
 
 let g:ycm_error_symbol = "➠"
 let g:ycm_warning_symbol = "⚠"
