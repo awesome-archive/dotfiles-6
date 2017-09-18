@@ -58,6 +58,7 @@ set wildmode=full
 set foldmethod=syntax
 set nofoldenable
 
+
 " 不使用 swapfile
 set noswapfile
 
@@ -76,18 +77,6 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 " ++++++++++++++++++++++++++++++++++++++++
 " +             快捷键配置               +
 " ++++++++++++++++++++++++++++++++++++++++
-
-"nnoremap <F1> :FormatCode<cr>
-"nnoremap <F2> :set number!<cr>
-"nnoremap <F5> :set paste!<cr>
-"nnoremap <F4> :set hlsearch!<cr>
-
-"nnoremap <F9> :TagbarToggle<cr>
-"nnoremap <F10> :NERDTreeToggle<cr>
-
-" insert current time
-"nnoremap <F12> "=strftime("%F")<CR>gP
-"inoremap <F12> <C-R>=strftime("%F")<CR>
 
 " 绑定 jk <Esc>，这样就不用按角落里面的 <Esc>
 inoremap jk <Esc>
@@ -124,36 +113,33 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
-" 输入模式下快速的移动光标
-"inoremap <C-k> <Up>
-"inoremap <C-j> <Down>
-"inoremap <C-h> <Left>
-"inoremap <C-l> <Right>
-"inoremap <C-a> <Home>
-"inoremap <C-e> <End>
-
 " 命令行模式 Ctrl-j 下一条命令，Ctrl-k 上一条命令
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
-" 修改 vimrc 的快捷方式
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-
+" 系统剪贴板复制与粘贴
 nnoremap <C-p> "+gp
 vnoremap <C-y> "+y
 
-"function s:ToggleAutoChdir()
-    "let cwd = getcwd()
-    "if stridx(cwd, "build") == -1
-        "echo "autochdir"
-        "execute 'set autochdir'
-    "endif
-"endfunction
+" 打开/关闭quickfix
+nnoremap <leader>q :call QuickfixToggle()<cr>
 
-nnoremap coa :set autochdir!<CR> :set autochdir?<CR>
+let g:quickfix_is_open = 0
+
+function! QuickfixToggle()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open = 0
+    else
+        copen
+        let g:quickfix_is_open = 1
+    endif
+endfunction
+
+" 字体
+set guifont=FuraCode\ Nerd\ Font\ Mono\ 10
 
 if has("autocmd")
     "autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
