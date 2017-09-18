@@ -27,5 +27,17 @@ zle -N zle-keymap-select
 bindkey "^p" history-beginning-search-backward
 bindkey "^n" history-beginning-search-forward
 
-export GOPATH=$HOME/App/go
-export PATH=$PATH:$HOME/App/go/bin
+export GO_HOME=$HOME/App/go
+export PATH=$PATH:$GO_HOME/bin
+
+export ANDROID_HOME=$HOME/Android/Sdk
+
+export NDK_ROOT=$HOME/Android/android-ndk-r13b
+export PATH=$PATH:$NDK_ROOT
+
+export GRADLE_HOME=$HOME/Android/gradle-4.1
+export PATH=$PATH:$GRADLE_HOME/bin
+
+export ANDROID_TOOLCHAINS_HOME=$HOME/Android/android-toolchains-arm
+export PATH=$PATH:$ANDROID_TOOLCHAINS_HOME/bin
+
