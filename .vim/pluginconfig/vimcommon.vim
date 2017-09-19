@@ -60,7 +60,7 @@ set nofoldenable
 
 
 " 不使用 swapfile
-set noswapfile
+"set noswapfile
 
 " 删除设置
 set backspace=eol,start,indent

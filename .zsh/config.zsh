@@ -6,8 +6,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
 setxkbmap -option ctrl:nocaps
 
-export PATH=/usr/local/bin:$PATH
-
 export CHEATCOLORS=true
 
 eval `dircolors ~/.dircolors`
@@ -24,9 +22,6 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 # 按键延时为1ms
 export KEYTIMEOUT=1
-
-export GO_HOME=$HOME/App/go
-export PATH=$PATH:$GO_HOME/bin
 
 export ANDROID_HOME=$HOME/Android/Sdk
 
