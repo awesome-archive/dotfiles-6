@@ -16,6 +16,11 @@ source ~/.vim/pluginconfig/vimcommon.vim
 " enable matchit
 runtime macro/matchit.vim
 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent execute "!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 " 主题
