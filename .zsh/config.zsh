@@ -12,6 +12,7 @@ eval `dircolors ~/.dircolors`
 #Set tmux 256 color and start tmux
 [ -z "$TMUX" ] && export TERM=screen-256color && tmux -2 new
 
+export PATH=$PATH:~/Application
 #Use vi style
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"

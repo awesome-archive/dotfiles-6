@@ -124,19 +124,7 @@ nnoremap <C-p> "+gp
 vnoremap <C-y> "+y
 
 " 打开/关闭quickfix
-nnoremap <leader>q :call QuickfixToggle()<cr>
-
-let g:quickfix_is_open = 0
-
-function! QuickfixToggle()
-    if g:quickfix_is_open
-        cclose
-        let g:quickfix_is_open = 0
-    else
-        copen
-        let g:quickfix_is_open = 1
-    endif
-endfunction
+nnoremap <leader>q :cclose<cr>
 
 " 字体
 set guifont=FuraCode\ Nerd\ Font\ Mono\ 10

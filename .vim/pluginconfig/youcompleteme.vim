@@ -1,6 +1,5 @@
 " youcompleteme "
 """""""""""""""""
-let g:ycm_python_binaty_path="/usr/bin/python3"
 
 let g:ycm_global_ycm_extra_conf="~/.vim/pluginconfig/.ycm_extra_conf.py"
 
@@ -13,10 +12,10 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 let g:ycm_confirm_extra_conf=0
 
 " 开启基于tag的补全，可以在这之后添加需要的标签路径
-let g:ycm_collect_identifiers_from_tags_files=0
+let g:ycm_collect_identifiers_from_tags_files=1
 
 "注释和字符串中的文字也会被收入补全
-let g:ycm_collect_identifiers_from_comments_and_strings = 0
+let g:ycm_collect_identifiers_from_comments_and_strings=0
 
 " 输入第2个字符开始补全
 let g:ycm_min_num_of_chars_for_completion=2
@@ -37,9 +36,10 @@ let g:ycm_complete_in_strings = 1
 let g:ycm_filetype_blacklist = {
             \ 'tagbar' : 1,
             \ 'nerdtree' : 1,
+            \ 'startify' : 1,
             \}
 
-nnoremap  <C-f>:YcmCompleter FixIt<cr>
+nnoremap  <Leader>x :YcmCompleter FixIt<cr>
 
 let g:ycm_error_symbol = "➠"
 let g:ycm_warning_symbol = "⚠"

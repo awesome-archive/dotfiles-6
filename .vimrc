@@ -27,14 +27,12 @@ Plug 'kshenoy/vim-signature'    " 右侧显示标记
 
 " tmux集成
 Plug 'edkolev/tmuxline.vim' " 将tmux状态栏与vim统一
-" Plug 'wellle/tmux-complete.vim'
 Plug 'christoomey/vim-tmux-navigator' " tmux窗口与vim窗口无缝切换
 
 " 自动补全
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets' " 代码块自动补全
 Plug 'Valloric/YouCompleteMe'                       " 语义补全，跳转
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} " 需要先安装clang++
-" Plug 'mattn/emmet-vim'    " 指令补全
 
 " parenthes
 Plug 'Raimondi/delimitMate' " 符号对自动补全
@@ -81,10 +79,6 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'          " 高亮
 Plug 'iamcco/markdown-preview.vim'      " 预览
 
-" for shell script
-" 使用过少且和tmux-navigator冲突
-" Plug 'WolfgangMehner/bash-support'      " 设置面板打开方式为,ntw
-
 " undo
 Plug 'sjl/gundo.vim'
 
@@ -123,7 +117,7 @@ Plug 'aklt/plantuml-syntax'
 Plug 'ryanoasis/vim-devicons'
 
 " this plugin must come after vim-devicons
-Plug 'bagrat/vim-workspace'
+"Plug 'bagrat/vim-workspace'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -135,7 +129,6 @@ call plug#end()
 " +++++++++++++++++++++++++++++++++++++++
 
 source ~/.vim/pluginconfig/ack.vim
-" source ~/.vim/pluginconfig/acsnum.vim
 source ~/.vim/pluginconfig/airline.vim
 source ~/.vim/pluginconfig/colorscheme.vim
 source ~/.vim/pluginconfig/ctrlp.vim
@@ -143,21 +136,19 @@ source ~/.vim/pluginconfig/ctrlsf.vim
 source ~/.vim/pluginconfig/doxygentoolkit.vim
 source ~/.vim/pluginconfig/flake8.vim
 source ~/.vim/pluginconfig/fugitive.vim
-source ~/.vim/pluginconfig/nerdcommenter.vim
-source ~/.vim/pluginconfig/rootignore.vim
 source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tagbar.vim
 source ~/.vim/pluginconfig/tmuxline.vim
 source ~/.vim/pluginconfig/ultisnips.vim
 source ~/.vim/pluginconfig/visual-star.vim
 source ~/.vim/pluginconfig/youcompleteme.vim
-" source ~/.vim/pluginconfig/vim-autotag.vim
-" source ~/.vim/pluginconfig/vim-note.vim
 source ~/.vim/pluginconfig/cpplint.vim
 source ~/.vim/pluginconfig/fswitch.vim
-" source ~/.vim/pluginconfig/bash-support.vim
 source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
 source ~/.vim/pluginconfig/gundo.vim
 source ~/.vim/pluginconfig/vim-tags.vim
 source ~/.vim/pluginconfig/easymotion.vim
-source ~/.vim/pluginconfig/vim-workspace.vim
+"source ~/.vim/pluginconfig/vim-workspace.vim
+source ~/.vim/pluginconfig/nerdcommenter.vim
+source ~/.vim/pluginconfig/rootignore.vim
+source ~/.vim/pluginconfig/clang-format.vim

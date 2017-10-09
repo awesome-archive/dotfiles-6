@@ -1,1 +1,3 @@
-nnoremap <C-i> :ClangFormat<CR>
+"nnoremap <C-i> :ClangFormat<CR>
+
+autocmd BufWritePre *.cpp,*.c,*.h,*.hpp ClangFormat
