@@ -17,8 +17,8 @@ source ~/.vim/pluginconfig/vimcommon.vim
 runtime macro/matchit.vim
 
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent execute "!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
+    silent execute "!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+    autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -43,6 +43,7 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} " 需要先安装clang++
 Plug 'Raimondi/delimitMate' " 符号对自动补全
 Plug 'tpope/vim-surround'   " 添/删/改符号对，ds：删除，cs：修改 ys：添加
 Plug 'tpope/vim-repeat'     " 使得插件命令可以重复（否则可能只能重复一部分）
+Plug 'kien/rainbow_parentheses.vim'
 
 " project manager
 Plug 'octref/RootIgnore' " 读取.gitignore 作为wildignore
@@ -60,12 +61,14 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " cpp dev
 Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']}
-Plug 'rhysd/vim-clang-format'
+"Plug 'rhysd/vim-clang-format'
+Plug 'Chiel92/vim-autoformat'
 Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'rsaraf/vim-advanced-lint'
 Plug 'szw/vim-tags'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'rhysd/clever-f.vim'
+Plug 'w0rp/ale'
+Plug 'thinca/vim-quickrun'
 
 " python
 Plug 'nvie/vim-flake8', {'for': 'python'}
@@ -78,7 +81,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " for indent
-Plug 'godlygeek/tabular'
+Plug 'junegunn/vim-easy-align'
 
 " for markdown
 Plug 'plasticboy/vim-markdown'          " 高亮
@@ -86,6 +89,15 @@ Plug 'iamcco/markdown-preview.vim'      " 预览
 
 " undo
 Plug 'sjl/gundo.vim'
+
+" reference
+Plug 'KabbAmine/zeavim.vim', {'on': [
+            \   'Zeavim', 'Docset',
+            \   '<Plug>Zeavim',
+            \   '<Plug>ZVVisSelection',
+            \   '<Plug>ZVKeyDocset',
+            \   '<Plug>ZVMotion'
+            \ ]}
 
 " text-object
 " ae/ie 全选
@@ -113,6 +125,7 @@ Plug 'zhaohuaxishi/auto-header'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/fcitx.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'terryma/vim-smooth-scroll'
 
 " uml
 Plug 'scrooloose/vim-slumlord'
@@ -120,9 +133,6 @@ Plug 'aklt/plantuml-syntax'
 
 " icons
 Plug 'ryanoasis/vim-devicons'
-
-" this plugin must come after vim-devicons
-"Plug 'bagrat/vim-workspace'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -147,13 +157,16 @@ source ~/.vim/pluginconfig/tmuxline.vim
 source ~/.vim/pluginconfig/ultisnips.vim
 source ~/.vim/pluginconfig/visual-star.vim
 source ~/.vim/pluginconfig/youcompleteme.vim
-source ~/.vim/pluginconfig/cpplint.vim
 source ~/.vim/pluginconfig/fswitch.vim
 source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
 source ~/.vim/pluginconfig/gundo.vim
 source ~/.vim/pluginconfig/vim-tags.vim
 source ~/.vim/pluginconfig/easymotion.vim
-"source ~/.vim/pluginconfig/vim-workspace.vim
 source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/rootignore.vim
-source ~/.vim/pluginconfig/clang-format.vim
+"source ~/.vim/pluginconfig/clang-format.vim
+source ~/.vim/pluginconfig/vim-autoformat.vim
+source ~/.vim/pluginconfig/vim-easy-align.vim
+source ~/.vim/pluginconfig/vim-smooth-scroll.vim
+source ~/.vim/pluginconfig/rainbow-parentheses.vim
+source ~/.vim/pluginconfig/ale.vim

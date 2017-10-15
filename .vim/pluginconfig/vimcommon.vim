@@ -54,9 +54,11 @@ set cursorline
 set wildmenu
 set wildmode=full
 
-" 不使用代码折叠功能
-set foldmethod=syntax
+" 代码折叠
+set foldmethod=indent
 set nofoldenable
+nnoremap <Space> za
+
 
 
 " 不使用 swapfile
@@ -81,9 +83,6 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 " 绑定 jk <Esc>，这样就不用按角落里面的 <Esc>
 inoremap jk <Esc>
 
-" 绑定 space 到 : 按键
-noremap <space> :
-
 "绑定大写的 HL 为行首和行尾的快捷键
 noremap H ^
 noremap L $
@@ -101,10 +100,13 @@ let maplocalleader = ','
 noremap + ;
 noremap - ,
 
-" 开启保存 undo 历史功能
-set undofile
+if !isdirectory($HOME."/.undo_history")
+    call mkdir($HOME."/.undo_history", "", 0700)
+endif
 " undo 历史保存路径
 set undodir=~/.undo_history/
+" 开启保存 undo 历史功能
+set undofile
 
 " 使用 %% 扩展当前文件的路径
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -122,6 +124,10 @@ cnoremap <C-e> <End>
 " 系统剪贴板复制与粘贴
 nnoremap <C-p> "+gp
 vnoremap <C-y> "+y
+
+" 替换
+nnoremap <Leader>r "_diwP
+vnoremap p "_dP
 
 " 打开/关闭quickfix
 nnoremap <leader>q :cclose<cr>
