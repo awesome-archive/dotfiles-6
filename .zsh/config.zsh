@@ -9,10 +9,13 @@ setxkbmap -option ctrl:nocaps
 export CHEATCOLORS=true
 
 eval `dircolors ~/.dircolors`
-#Set tmux 256 color and start tmux
-[ -z "$TMUX" ] && export TERM=screen-256color && tmux -2 new
 
-export PATH=$PATH:~/Application
+# for ccache
+#export PATH=/usr/lib/ccache/bin:$PATH
+
+#Set tmux 256 color and start tmux
+[ -z "$TMUX" ]  && tmux -2 new
+
 #Use vi style
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
@@ -21,6 +24,7 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+
 # 按键延时为1ms
 export KEYTIMEOUT=1
 

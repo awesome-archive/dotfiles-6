@@ -45,3 +45,5 @@ let g:ycm_error_symbol = "✖"
 let g:ycm_warning_symbol ="➠"
 
 let g:tmuxcomplete#trigger = 'omnifunc'
+let g:ycm_server_use_vim_stdout = 1
+let g:ycm_server_log_level = 'debug'
