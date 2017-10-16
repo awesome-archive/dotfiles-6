@@ -14,7 +14,7 @@ eval `dircolors ~/.dircolors`
 #export PATH=/usr/lib/ccache/bin:$PATH
 
 #Set tmux 256 color and start tmux
-[ -z "$TMUX" ]  && tmux -v -2 new
+[ -z "$TMUX" ]  && tmux -2 new
 
 #Use vi style
 function zle-line-init zle-keymap-select {
