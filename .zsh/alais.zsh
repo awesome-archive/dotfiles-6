@@ -11,5 +11,7 @@ alias fix="fuck"
 
 alias make="make -j8"
 
+alias cat="ccat"
+
 
 alias cdbuild="if [ -d \"./build\" ]; then cd build; else mkdir build && cd build; fi"

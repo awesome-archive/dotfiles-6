@@ -46,8 +46,11 @@ Plug 'tpope/vim-repeat'     " 使得插件命令可以重复（否则可能只�
 
 " project manager
 Plug 'octref/RootIgnore' " 读取.gitignore 作为wildignore
-Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'scrooloose/nerdtree'
+", {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'vim-scripts/vim-nerdtree_plugin_open'
+", {'on': 'NERDTreeToggle'}
 Plug 'majutsushi/tagbar' "需安装ctags-exuberant，显示代码结构信息
 Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky' "文件/函数查找
 Plug 'dyng/ctrlsf.vim'
@@ -151,6 +154,7 @@ source ~/.vim/pluginconfig/cpplint.vim
 source ~/.vim/pluginconfig/fswitch.vim
 source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
 source ~/.vim/pluginconfig/gundo.vim
+source ~/.vim/pluginconfig/markdown.vim
 source ~/.vim/pluginconfig/vim-tags.vim
 source ~/.vim/pluginconfig/easymotion.vim
 "source ~/.vim/pluginconfig/vim-workspace.vim
