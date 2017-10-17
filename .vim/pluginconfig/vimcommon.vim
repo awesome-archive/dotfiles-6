@@ -55,14 +55,13 @@ set wildmenu
 set wildmode=full
 
 " 代码折叠
-set foldmethod=indent
-set nofoldenable
-nnoremap <Space> za
+set foldenable              " 开始折叠
+set foldmethod=indent       " 设置缩进折叠
+set foldcolumn=0            " 设置折叠区域的宽度
+setlocal foldlevel=1        " 最大只折叠一层
+set foldlevelstart=99       " 打开文件默认不折叠代码
 
-
-
-" 不使用 swapfile
-"set noswapfile
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 
 " 删除设置
 set backspace=eol,start,indent
@@ -123,6 +122,7 @@ cnoremap <C-e> <End>
 
 " 系统剪贴板复制与粘贴
 nnoremap <C-p> "+gp
+vnoremap <C-p> "+gp
 vnoremap <C-y> "+y
 
 " 替换

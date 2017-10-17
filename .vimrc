@@ -48,10 +48,8 @@ Plug 'kien/rainbow_parentheses.vim'
 " project manager
 Plug 'octref/RootIgnore' " 读取.gitignore 作为wildignore
 Plug 'scrooloose/nerdtree'
-", {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/vim-nerdtree_plugin_open'
-", {'on': 'NERDTreeToggle'}
 Plug 'majutsushi/tagbar' "需安装ctags-exuberant，显示代码结构信息
 Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky' "文件/函数查找
 Plug 'dyng/ctrlsf.vim'
@@ -64,7 +62,6 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " cpp dev
 Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']}
-"Plug 'rhysd/vim-clang-format'
 Plug 'Chiel92/vim-autoformat'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'szw/vim-tags'
@@ -168,9 +165,10 @@ source ~/.vim/pluginconfig/vim-tags.vim
 source ~/.vim/pluginconfig/easymotion.vim
 source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/rootignore.vim
-"source ~/.vim/pluginconfig/clang-format.vim
 source ~/.vim/pluginconfig/vim-autoformat.vim
 source ~/.vim/pluginconfig/vim-easy-align.vim
 source ~/.vim/pluginconfig/vim-smooth-scroll.vim
 source ~/.vim/pluginconfig/rainbow-parentheses.vim
 source ~/.vim/pluginconfig/ale.vim
+source ~/.vim/pluginconfig/quickrun.vim
+source ~/.vim/pluginconfig/zeavim.vim
