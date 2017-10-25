@@ -4,8 +4,6 @@ export EDITOR="vim"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
-setxkbmap -option ctrl:nocaps
-
 export CHEATCOLORS=true
 
 eval `dircolors ~/.dircolors`

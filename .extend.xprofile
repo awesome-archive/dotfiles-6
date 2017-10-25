@@ -1,3 +1,7 @@
+# 输入法配置
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
+
+# 将大小写切换键映射为ctrl
+setxkbmap -option ctrl:nocaps
