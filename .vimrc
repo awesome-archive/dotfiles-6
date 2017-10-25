@@ -62,7 +62,6 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 " cpp dev
 Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']}
 Plug 'Chiel92/vim-autoformat'
-Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'szw/vim-tags'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'rhysd/clever-f.vim'
@@ -72,8 +71,10 @@ Plug 'thinca/vim-quickrun'
 " python
 Plug 'nvie/vim-flake8', {'for': 'python'}
 
-" CSS/QSS
-Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'qss']}
+" syntax hightlight
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'hail2u/vim-css3-syntax', {'for': ['css']}
+Plug 'artoj/qmake-syntax-vim'
 
 " git
 Plug 'airblade/vim-gitgutter'

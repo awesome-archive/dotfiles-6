@@ -72,9 +72,6 @@ set listchars=tab:▸\ ,eol:¬
 " vim 类型文件设置折叠方式为 marker
 autocmd FileType vim set foldmethod=marker
 
-" 保存配置文件时自动载入
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
-
 " ++++++++++++++++++++++++++++++++++++++++
 " +             快捷键配置               +
 " ++++++++++++++++++++++++++++++++++++++++
