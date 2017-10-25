@@ -43,7 +43,6 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} " 需要先安装clang++
 Plug 'Raimondi/delimitMate' " 符号对自动补全
 Plug 'tpope/vim-surround'   " 添/删/改符号对，ds：删除，cs：修改 ys：添加
 Plug 'tpope/vim-repeat'     " 使得插件命令可以重复（否则可能只能重复一部分）
-Plug 'kien/rainbow_parentheses.vim'
 
 " project manager
 Plug 'octref/RootIgnore' " 读取.gitignore 作为wildignore
@@ -168,7 +167,6 @@ source ~/.vim/pluginconfig/rootignore.vim
 source ~/.vim/pluginconfig/vim-autoformat.vim
 source ~/.vim/pluginconfig/vim-easy-align.vim
 source ~/.vim/pluginconfig/vim-smooth-scroll.vim
-source ~/.vim/pluginconfig/rainbow-parentheses.vim
 source ~/.vim/pluginconfig/ale.vim
 source ~/.vim/pluginconfig/quickrun.vim
 source ~/.vim/pluginconfig/zeavim.vim
