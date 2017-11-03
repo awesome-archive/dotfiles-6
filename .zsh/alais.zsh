@@ -15,3 +15,5 @@ alias cat="ccat"
 
 
 alias cdbuild="if [ -d \"./build\" ]; then cd build; else mkdir build && cd build; fi"
+
+alias ss="proxychains4 -q "
