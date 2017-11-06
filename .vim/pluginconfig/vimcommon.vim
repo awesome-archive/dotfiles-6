@@ -43,6 +43,9 @@ set wrap
 " 自动载入外部修改
 set autoread
 
+" 关闭延时
+set ttimeoutlen=0
+
 " 编码设置
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,GB2312,big5
