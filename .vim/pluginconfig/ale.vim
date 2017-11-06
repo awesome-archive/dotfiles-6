@@ -17,5 +17,5 @@ nmap <C-k> <Plug>(ale_next_wrap)
 nmap <Leader>d :ALEDetail<CR>
 let g:ale_linters = {'c': ['cpplint']}
 let g:ale_linters = {'cpp': ['cpplint']}
-let g:ale_cpp_cpplint_options = '--filter=-whitespace/indent,-build/include'
+let g:ale_cpp_cpplint_options = '--build/c++11,--filter=-whitespace/indent,-build/include'
 "let g:ale_cpp_cppcheck_options = '--enable=style,warning,performance,portability --std=c++11 --verbose'
