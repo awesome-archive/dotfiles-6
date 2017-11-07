@@ -125,6 +125,9 @@ nnoremap <C-p> "+gp
 vnoremap <C-p> "+gp
 vnoremap <C-y> "+y
 
+" 复制
+nnoremap <Leader>y yiw
+
 " 替换
 nnoremap <Leader>r "_diwP
 vnoremap p "_dP
