@@ -126,6 +126,7 @@ Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/fcitx.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-smooth-scroll'
+Plug 'ianva/vim-youdao-translater'
 
 " uml
 Plug 'scrooloose/vim-slumlord'
@@ -171,3 +172,4 @@ source ~/.vim/pluginconfig/vim-smooth-scroll.vim
 source ~/.vim/pluginconfig/ale.vim
 source ~/.vim/pluginconfig/quickrun.vim
 source ~/.vim/pluginconfig/zeavim.vim
+source ~/.vim/pluginconfig/youdao-translater.vim
