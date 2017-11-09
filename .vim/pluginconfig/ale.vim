@@ -9,7 +9,15 @@ let g:ale_echo_msg_error_str = 'Error'
 let g:ale_echo_msg_warning_str = 'Warning'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 "Linter选项
-let g:ale_linters = {'c': ['cpplint']}
-let g:ale_linters = {'cpp': ['cpplint']}
-let g:ale_cpp_cpplint_options = '--filter=-whitespace/indent,-build/c++11,-build/include'
+let g:ale_linters = {
+          \ 'sh' : ['shellcheck'],
+          \ 'c': ['cpplint'],
+          \ 'cpp': ['cpplint'],
+          \ 'vim' : ['vint'],
+          \ 'html' : ['tidy'],
+          \ 'python' : ['flake8'],
+          \ 'markdown' : ['mdl'],
+          \ 'javascript' : ['eslint'],
+          \}
+let g:ale_cpp_cpplint_options = '--filter=-whitespace/indent,-build/c++11,-build/include,-runtime/references'
 "let g:ale_cpp_cppcheck_options = '--enable=style,warning,performance,portability --std=c++11 --verbose'
