@@ -129,7 +129,7 @@ vnoremap <C-y> "+y
 nnoremap <Leader>y yiw
 
 " 替换
-nnoremap <Leader>r "_diwP
+nnoremap <Leader>p "_diwP
 vnoremap p "_dP
 
 " 打开/关闭quickfix

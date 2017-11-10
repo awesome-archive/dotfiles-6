@@ -66,7 +66,6 @@ Plug 'szw/vim-tags'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'rhysd/clever-f.vim'
 Plug 'w0rp/ale'
-Plug 'thinca/vim-quickrun'
 
 " python
 Plug 'nvie/vim-flake8', {'for': 'python'}
@@ -117,7 +116,7 @@ Plug 'sgur/vim-textobj-parameter'
 " other
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-dispatch' "在quickfix中执行命令
+Plug 'skywind3000/asyncrun.vim' "异步执行命令
 Plug 'tpope/vim-endwise'
 Plug 'zhaohuaxishi/ctrlp-header'
 Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
@@ -170,6 +169,6 @@ source ~/.vim/pluginconfig/vim-autoformat.vim
 source ~/.vim/pluginconfig/vim-easy-align.vim
 source ~/.vim/pluginconfig/vim-smooth-scroll.vim
 source ~/.vim/pluginconfig/ale.vim
-source ~/.vim/pluginconfig/quickrun.vim
 source ~/.vim/pluginconfig/zeavim.vim
 source ~/.vim/pluginconfig/youdao-translater.vim
+source ~/.vim/pluginconfig/asyncrun.vim

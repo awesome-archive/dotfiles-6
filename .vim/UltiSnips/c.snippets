@@ -3,10 +3,16 @@ priority 1
 global !p
 import vim
 import snippet_helpers as helpers
+import os.path
 endglobal
 
 snippet once "Include header once only guard"
-#ifndef ${1:`!p
+`!p
+lisence = os.path.abspath("./.vim/pluginconfig/license.txt")
+with open(lisence) as fin:
+	snip.rv = fin.read().strip()`
+
+#ifndef ${2:`!p
 if not snip.c:
 	prefix = helpers.get_project_root()
 	if prefix:
@@ -24,11 +30,11 @@ if not snip.c:
 		snip.rv = ('%s_%s' % (name,rand)).upper()
 else:
 	snip.rv = snip.c`}
-#define $1
+#define $2
 
 ${VISUAL}${0}
 
-#endif  // $1
+#endif  // $2
 endsnippet
 
 snippet main "main() (main)"
