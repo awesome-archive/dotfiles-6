@@ -1,1 +1,4 @@
-/* Copyright (©) 2017 CVTE zhangfan3427@cvte.com */
+{
+    "personal": "/* Copyright (©) 2017 Zix zgzf1001@gmail.com */",
+    "work": "/* Copyright (©) 2017 CVTE zhangfan3427@cvte.com */"
+}

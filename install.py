@@ -42,7 +42,7 @@ def __install():
 
 def __personalize():
     is_home = input("当前环境是否为个人使用？(Y/n) ")
-    LISENCE_FILE = os.path.join(HOME, ".vim/pluginconfig/license.txt")
+    LISENCE_FILE = os.path.join(DOTFILES_HOME, "license.txt")
     with open(LISENCE_FILE, "r") as fin:
         license = json.loads(fin.read())
     with open(LISENCE_FILE, "w") as fout:
