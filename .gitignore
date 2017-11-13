@@ -4,4 +4,4 @@
 .vim/pluginconfig/.ycm_extra_conf.pyc
 .vim/.netrwhist
 .vim/pythonx/__pycache__/
-license.txt
+*license.txt
