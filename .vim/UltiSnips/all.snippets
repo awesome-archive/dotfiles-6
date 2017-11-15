@@ -1,0 +1,11 @@
+priority 1
+
+snippet copy "copyright"
+`!p
+HOME = os.path.expanduser('~');
+LISENCE_PATH = os.path.join(HOME, ".vim/pluginconfig/license.txt")
+lisence = os.path.abspath(LISENCE_PATH)
+with open(lisence) as fin:
+	snip.rv = fin.read().strip()`
+
+endsnippet
