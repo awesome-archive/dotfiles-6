@@ -93,6 +93,12 @@ nnoremap ` '
 " 使用超级用户权限编辑这个文件
 cmap w!! w !sudo tee >/dev/null %
 
+" 调整宽度
+cmap v= vertical resize +5
+cmap v- vertical resize -5
+cmap s= resize +5
+cmap s- resize -5
+
 " 修改leader键
 let mapleader = ';'
 let maplocalleader = ','
@@ -125,6 +131,10 @@ nnoremap <C-p> "+gp
 vnoremap <C-p> "+gp
 vnoremap <C-y> "+y
 
+" 调整缩进后保持选中
+xnoremap <  <gv
+xnoremap >  >gv
+
 " 复制
 nnoremap <Leader>y yiw
 
@@ -138,10 +148,12 @@ nnoremap <leader>q :cclose<cr>
 " 字体
 set guifont=FuraCode\ Nerd\ Font\ Mono\ 10
 
-if has("autocmd")
-    "autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
-    "autocmd BufEnter * silent! call s:ToggleAutoChdir()
+autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
 
+if has("autocmd")
     autocmd FileType c,cpp let b:autoformat_autoindent=0
     autocmd BufNewFile *.cpp,*.c,*.h,*.hpp 0r ~/.vim/pluginconfig/license.txt
     " 使qss文件可以被css文件插件支持
