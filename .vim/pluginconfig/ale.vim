@@ -13,11 +13,13 @@ let g:ale_linters = {
           \ 'sh' : ['shellcheck'],
           \ 'c': ['cpplint'],
           \ 'cpp': ['cpplint'],
-          \ 'vim' : ['vint'],
           \ 'html' : ['tidy'],
           \ 'python' : ['flake8'],
           \ 'markdown' : ['mdl'],
           \ 'javascript' : ['eslint'],
+          \ 'json' : ['jsonlint'],
           \}
 let g:ale_cpp_cpplint_options = '--filter=-whitespace/indent,-build/c++11,-build/include,-runtime/references'
-"let g:ale_cpp_cppcheck_options = '--enable=style,warning,performance,portability --std=c++11 --verbose'
+let g:ale_python_flake8_options = '--max-line-length=80'
+
+

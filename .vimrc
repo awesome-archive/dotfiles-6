@@ -67,9 +67,6 @@ Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'rhysd/clever-f.vim'
 Plug 'w0rp/ale'
 
-" python
-Plug 'nvie/vim-flake8', {'for': 'python'}
-
 " syntax hightlight
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'hail2u/vim-css3-syntax', {'for': ['css']}
@@ -149,7 +146,6 @@ source ~/.vim/pluginconfig/colorscheme.vim
 source ~/.vim/pluginconfig/ctrlp.vim
 source ~/.vim/pluginconfig/ctrlsf.vim
 source ~/.vim/pluginconfig/doxygentoolkit.vim
-source ~/.vim/pluginconfig/flake8.vim
 source ~/.vim/pluginconfig/fugitive.vim
 source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tagbar.vim
