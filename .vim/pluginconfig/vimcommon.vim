@@ -94,10 +94,10 @@ nnoremap ` '
 cmap w!! w !sudo tee >/dev/null %
 
 " 调整宽度
-cmap v= vertical resize +5
-cmap v- vertical resize -5
-cmap s= resize +5
-cmap s- resize -5
+cmap v= vertical resize +5<cr>
+cmap v- vertical resize -5<cr>
+cmap s= resize +5<cr>
+cmap s- resize -5<cr>
 
 " 修改leader键
 let mapleader = ';'
@@ -130,10 +130,6 @@ cnoremap <C-e> <End>
 nnoremap <C-p> "+gp
 vnoremap <C-p> "+gp
 vnoremap <C-y> "+y
-
-" 调整缩进后保持选中
-xnoremap <  <gv
-xnoremap >  >gv
 
 " 复制
 nnoremap <Leader>y yiw
