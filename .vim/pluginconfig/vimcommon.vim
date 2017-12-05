@@ -134,10 +134,6 @@ vnoremap <C-y> "+y
 " 复制
 nnoremap <Leader>y yiw
 
-" 替换
-nnoremap <Leader>p "_diwP
-vnoremap p "_dP
-
 " 打开/关闭quickfix
 nnoremap <leader>q :cclose<cr>
 
