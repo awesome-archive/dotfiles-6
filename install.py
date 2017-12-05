@@ -16,7 +16,6 @@ def __get_file_list():
         if (i.startswith('.')):
             file_list.append(i)
 
-
 def __file_path_check(file_path):
     if os.path.exists(file_path):
         is_replace = input("文件 %s 已存在，是否替换？(y/N)" % file_path)
@@ -27,7 +26,7 @@ def __file_path_check(file_path):
                 os.remove(file_path)
             else:
                 shutil.rmtree(file_path)
-        return True
+    return True
 
 
 def __install():
