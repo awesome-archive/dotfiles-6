@@ -123,6 +123,7 @@ Plug 'vim-scripts/fcitx.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-smooth-scroll'
 Plug 'ianva/vim-youdao-translater'
+Plug 'vim-scripts/VisIncr'
 
 " uml
 Plug 'scrooloose/vim-slumlord'
