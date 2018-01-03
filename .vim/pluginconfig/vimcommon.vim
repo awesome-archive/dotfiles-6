@@ -145,6 +145,10 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
+" K to lookup current word in cppman
+command! -nargs=+ Cppman silent! call system("tmux split-window cppman " . expand(<q-args>))
+autocmd FileType cpp nnoremap <silent><buffer> K <Esc>:Cppman <cword><CR>
+
 if has("autocmd")
     autocmd FileType c,cpp let b:autoformat_autoindent=0
     autocmd BufNewFile *.cpp,*.c,*.h,*.hpp 0r ~/.vim/pluginconfig/license.txt

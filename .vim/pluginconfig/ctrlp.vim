@@ -16,15 +16,14 @@ let g:ctrlp_funky_matchtype = 'path'
 
 let g:ctrlp_extensions = ['line', 'tag', 'funky']
 
-" use ag to list file
+" use rg to list file
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-  \ --ignore .git
-  \ --ignore .svn
-  \ --ignore .hg
-  \ --ignore .DS_Store
-  \ --ignore "**/*.pyc"
-  \ -g ""'
+let g:ctrlp_user_command = 'rg %s -i --hidden
+  \ --ignore-file .git
+  \ --ignore-file .svn
+  \ --ignore-file .hg
+  \ --ignore-file .DS_Store
+  \ --ignore-file "**/*.pyc"'
 
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
 

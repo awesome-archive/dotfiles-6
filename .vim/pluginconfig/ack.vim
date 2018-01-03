@@ -1,7 +1,7 @@
 " ack.vim "
 """""""""""
 
-" use ag as the search tool
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+" use rg as the search tool
+if executable('rg')
+  let g:ackprg = 'rg --vimgrep'
 endif
