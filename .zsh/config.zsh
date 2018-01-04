@@ -22,7 +22,7 @@ export KEYTIMEOUT=1
 
 export ANDROID_HOME=$HOME/Android/Sdk
 
-export ANDROID_NDK_HOME=$HOME/Android/android-ndk-r13b
+export ANDROID_NDK_HOME=/opt/android-ndk/
 export PATH=$PATH:$ANDROID_NDK_HOME
 
 export GRADLE_HOME=$HOME/Android/gradle-4.1
