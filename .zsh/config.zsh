@@ -25,8 +25,5 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_NDK_HOME=/opt/android-ndk/
 export PATH=$PATH:$ANDROID_NDK_HOME
 
-export GRADLE_HOME=$HOME/Android/gradle-4.1
-export PATH=$PATH:$GRADLE_HOME/bin
-
 export ANDROID_TOOLCHAINS_HOME=$HOME/Android/android-toolchains-arm
 export PATH=$PATH:$ANDROID_TOOLCHAINS_HOME/bin
