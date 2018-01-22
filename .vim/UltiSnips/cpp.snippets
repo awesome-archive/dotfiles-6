@@ -72,3 +72,17 @@ for (auto ${2:&i} : ${1:container}) {
 	${VISUAL}$0
 }
 endsnippet
+
+snippet tag "add a kTag"
+const LogTag kTag("${1:`!p
+snip.rv = snip.basename
+`}");
+endsnippet
+
+snippet nstag "add a kTag in a anonymous namespace"
+namespace {
+const LogTag kTag("${1:`!p
+snip.rv = snip.basename
+`}");
+}  // namespace
+endsnippet
