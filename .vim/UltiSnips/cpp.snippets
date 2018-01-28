@@ -86,3 +86,31 @@ snip.rv = snip.basename
 `}");
 }  // namespace
 endsnippet
+
+snippet cs "const std::string &"
+const std::string &${1:str}
+endsnippet
+
+snippet logt "a trace log"
+LOGT(kTag, "${1:trace}");
+endsnippet
+
+snippet logd "a debug log"
+LOGD(kTag, "${1:debug}");
+endsnippet
+
+snippet logi "a info log"
+LOGI(kTag, "${1:info}");
+endsnippet
+
+snippet logw "a warning log"
+LOGW(kTag, "${1:warning}");
+endsnippet
+
+snippet loge "a error log"
+LOGE(kTag, "${1:error}");
+endsnippet
+
+snippet sleep "sleep this thread"
+std::this_thread::sleep_for(std::chrono::seconds(${1:2}));
+endsnippet
