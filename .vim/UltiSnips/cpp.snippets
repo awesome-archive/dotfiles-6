@@ -114,3 +114,7 @@ endsnippet
 snippet sleep "sleep this thread"
 std::this_thread::sleep_for(std::chrono::seconds(${1:2}));
 endsnippet
+
+snippet mv "wrap selected with std::move()"
+std::move(${VISUAL})
+endsnippet
