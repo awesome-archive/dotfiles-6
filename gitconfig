@@ -1,0 +1,8 @@
+[user]
+	name = `Name`
+	email = `Mail`
+
+[diff]
+    tool = icdiff
+[difftool "icdiff"]
+    cmd = icdiff --highlight --line-numbers "$LOCAL" "$REMOTE"
