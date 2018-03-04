@@ -6,7 +6,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
 export CHEATCOLORS=true
 
-eval `dircolors ~/.dircolors`
+eval `dircolors ~/.dir_colors`
 
 #Use vi style
 function zle-line-init zle-keymap-select {
