@@ -21,9 +21,10 @@ snip.rv = "".join(tokens)
 `} {
 public:
 	${1/(\w+).*/$1/}(${2:arguments});
+	~${1/(\w+).*/$1/}();
 
-private:
-	${0:/* data */}
+public:
+
 };
 endsnippet
 
