@@ -18,6 +18,9 @@ set ignorecase
 set incsearch
 set hlsearch
 
+" 开启鼠标
+set mouse=a
+
 " 切换缓冲区文件可以不保存当前文件
 set hidden
 

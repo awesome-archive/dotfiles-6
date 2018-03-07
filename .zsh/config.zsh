@@ -30,3 +30,5 @@ export PATH=$PATH:$ANDROID_NDK_HOME
 
 export ANDROID_TOOLCHAINS_HOME=$HOME/Android/android-toolchains-arm
 export PATH=$PATH:$ANDROID_TOOLCHAINS_HOME/bin
+
+mkcd() { mkdir -p "$@" && cd "$@"; }
