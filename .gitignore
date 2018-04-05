@@ -5,3 +5,5 @@
 .vim/.netrwhist
 .vim/pythonx/__pycache__/
 *license.txt
+*.swp
+*.swo

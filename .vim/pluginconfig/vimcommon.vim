@@ -68,6 +68,7 @@ setlocal foldlevel=1        " 最大只折叠一层
 set foldlevelstart=99       " 打开文件默认不折叠代码
 
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+nnoremap <silent> <Backspace> :set hlsearch!<CR>
 
 " 删除设置
 set backspace=eol,start,indent
