@@ -49,7 +49,7 @@ Plug 'octref/RootIgnore' " 读取.gitignore 作为wildignore
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/vim-nerdtree_plugin_open'
-Plug 'majutsushi/tagbar' "需安装ctags-exuberant，显示代码结构信息
+Plug 'majutsushi/tagbar' "需安装universal ctags，显示代码结构信息
 Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky' "文件/函数查找
 Plug 'dyng/ctrlsf.vim'
 Plug 'terryma/vim-multiple-cursors'
@@ -62,7 +62,7 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 " cpp dev
 Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']}
 Plug 'Chiel92/vim-autoformat'
-Plug 'szw/vim-tags'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'rhysd/clever-f.vim'
 Plug 'w0rp/ale'
@@ -86,15 +86,6 @@ Plug 'iamcco/markdown-preview.vim'      " 预览
 
 " undo
 Plug 'sjl/gundo.vim'
-
-" reference
-Plug 'KabbAmine/zeavim.vim', {'on': [
-            \   'Zeavim', 'Docset',
-            \   '<Plug>Zeavim',
-            \   '<Plug>ZVVisSelection',
-            \   '<Plug>ZVKeyDocset',
-            \   '<Plug>ZVMotion'
-            \ ]}
 
 " text-object
 " ae/ie 全选
@@ -159,7 +150,7 @@ source ~/.vim/pluginconfig/fswitch.vim
 source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
 source ~/.vim/pluginconfig/gundo.vim
 source ~/.vim/pluginconfig/markdown.vim
-source ~/.vim/pluginconfig/vim-tags.vim
+source ~/.vim/pluginconfig/vim-gutentags.vim
 source ~/.vim/pluginconfig/easymotion.vim
 source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/rootignore.vim
@@ -167,6 +158,6 @@ source ~/.vim/pluginconfig/vim-autoformat.vim
 source ~/.vim/pluginconfig/vim-easy-align.vim
 source ~/.vim/pluginconfig/vim-smooth-scroll.vim
 source ~/.vim/pluginconfig/ale.vim
-source ~/.vim/pluginconfig/zeavim.vim
 source ~/.vim/pluginconfig/youdao-translater.vim
 source ~/.vim/pluginconfig/asyncrun.vim
+source ~/.vim/pluginconfig/echodoc.vim

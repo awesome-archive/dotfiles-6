@@ -15,10 +15,11 @@ let g:ycm_confirm_extra_conf=0
 let g:ycm_collect_identifiers_from_tags_files=1
 
 "注释和字符串中的文字也会被收入补全
-let g:ycm_collect_identifiers_from_comments_and_strings=0
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
 
 " 输入第2个字符开始补全
 let g:ycm_min_num_of_chars_for_completion=2
+let g:ycm_min_num_identifier_candidate_chars = 2
 
 " 禁止缓存匹配项,每次都重新生成匹配项
 let g:ycm_cache_omnifunc=1
@@ -40,13 +41,26 @@ let g:ycm_filetype_blacklist = {
             \}
 
 nnoremap  <Leader>x :YcmCompleter FixIt<cr>
-nnoremap  <Leader>[ :YcmCompleter GoToInclude<cr>
+nnoremap  <C-i> :YcmCompleter GoToInclude<cr>
 
 let g:ycm_error_symbol = "✖"
 let g:ycm_warning_symbol ="➠"
 
 let g:tmuxcomplete#trigger = 'omnifunc'
-let g:ycm_server_use_vim_stdout = 1
-let g:ycm_server_log_level = 'debug'
+let g:ycm_server_log_level = 'info'
 
+let g:ycm_semantic_triggers =  {
+            \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+            \ 'cs,lua,javascript': ['re!\w{2}'],
+            \ }
 
+let g:ycm_filetype_whitelist = {
+			\ "c":1,
+			\ "cpp":1,
+			\ "h":1,
+			\ "hpp":1,
+			\ "objc":1,
+			\ "sh":1,
+			\ "zsh":1,
+			\ "zimbu":1,
+			\ }

@@ -1,14 +1,18 @@
 "始终开启标志列
 let g:ale_sign_column_always = 1
 let g:ale_set_highlights = 0
+"推出插入模式后lint
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
 "设置标识符号
 let g:ale_sign_error = "✖"
 let g:ale_sign_warning = "➠"
 "显示Linter名称,出错或警告等相关信息
 let g:ale_echo_msg_error_str = 'Error'
 let g:ale_echo_msg_warning_str = 'Warning'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_echo_msg_format = '[%linter%] %code: %%s [%severity%]'
 "Linter选项
+let g:ale_linters_explicit = 1
 let g:ale_linters = {
           \ 'sh' : ['shellcheck'],
           \ 'c': ['cpplint'],
@@ -21,5 +25,3 @@ let g:ale_linters = {
           \}
 let g:ale_cpp_cpplint_options = '--filter=-whitespace/indent,-build/c++11,-build/include,-runtime/references'
 let g:ale_python_flake8_options = '--max-line-length=80'
-
-
