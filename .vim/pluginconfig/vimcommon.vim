@@ -60,6 +60,9 @@ set cursorline
 set wildmenu
 set wildmode=full
 
+" 不显示状态，airline已有
+set noshowmode
+
 " 代码折叠
 set foldenable              " 开始折叠
 set foldmethod=indent       " 设置缩进折叠

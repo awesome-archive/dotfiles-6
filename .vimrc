@@ -66,6 +66,7 @@ Plug 'szw/vim-tags'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'rhysd/clever-f.vim'
 Plug 'w0rp/ale'
+Plug 'Shougo/echodoc.vim'
 
 " syntax hightlight
 Plug 'octol/vim-cpp-enhanced-highlight'
