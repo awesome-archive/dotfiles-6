@@ -71,7 +71,7 @@ Plug 'Shougo/echodoc.vim'
 " syntax hightlight
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'hail2u/vim-css3-syntax', {'for': ['css']}
-Plug 'artoj/qmake-syntax-vim'
+Plug 'artoj/qmake-syntax-vim', {'for': ['qmake']}
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -81,11 +81,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-easy-align'
 
 " for markdown
-Plug 'plasticboy/vim-markdown'          " 高亮
-Plug 'iamcco/markdown-preview.vim'      " 预览
+Plug 'plasticboy/vim-markdown', {'for': ['markdown']} " 高亮
+Plug 'iamcco/markdown-preview.vim', {'for': ['markdown']}     " 预览
 
 " undo
-Plug 'sjl/gundo.vim'
+"Plug 'sjl/gundo.vim'
 
 " text-object
 " ae/ie 全选
@@ -107,9 +107,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
 Plug 'skywind3000/asyncrun.vim' "异步执行命令
 Plug 'tpope/vim-endwise'
-Plug 'zhaohuaxishi/ctrlp-header'
 Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
-Plug 'zhaohuaxishi/auto-header'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/fcitx.vim'
 Plug 'easymotion/vim-easymotion'
@@ -118,8 +116,8 @@ Plug 'ianva/vim-youdao-translater'
 Plug 'vim-scripts/VisIncr'
 
 " uml
-Plug 'scrooloose/vim-slumlord'
-Plug 'aklt/plantuml-syntax'
+"Plug 'scrooloose/vim-slumlord'
+"Plug 'aklt/plantuml-syntax'
 
 " icons
 Plug 'ryanoasis/vim-devicons'
@@ -148,7 +146,7 @@ source ~/.vim/pluginconfig/visual-star.vim
 source ~/.vim/pluginconfig/youcompleteme.vim
 source ~/.vim/pluginconfig/fswitch.vim
 source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
-source ~/.vim/pluginconfig/gundo.vim
+"source ~/.vim/pluginconfig/gundo.vim
 source ~/.vim/pluginconfig/markdown.vim
 source ~/.vim/pluginconfig/vim-gutentags.vim
 source ~/.vim/pluginconfig/easymotion.vim
