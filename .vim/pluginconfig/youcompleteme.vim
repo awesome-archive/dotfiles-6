@@ -64,4 +64,7 @@ let g:ycm_filetype_whitelist = {
 			\ "zsh":1,
 			\ "zimbu":1,
 			\ "python":1,
+			\ "cmake":1,
+			\ "qmake":1,
+			\ "css":1,
 			\ }
