@@ -114,6 +114,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-smooth-scroll'
 Plug 'ianva/vim-youdao-translater'
 Plug 'vim-scripts/VisIncr'
+Plug 'xyz1001/WebSearch.vim'
 
 " uml
 "Plug 'scrooloose/vim-slumlord'

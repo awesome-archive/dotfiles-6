@@ -9,10 +9,6 @@ set nocompatible
 set number
 set relativenumber
 
-" j/k在没有计数的时候按虚拟行移动，有计数的时候按实际行移动
-nnoremap <expr> j v:count ? 'j' : 'gj'
-nnoremap <expr> k v:count ? 'k' : 'gk'
-
 " 搜索设置
 set ignorecase
 set incsearch
@@ -70,21 +66,37 @@ set foldcolumn=0            " 设置折叠区域的宽度
 setlocal foldlevel=1        " 最大只折叠一层
 set foldlevelstart=99       " 打开文件默认不折叠代码
 
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-nnoremap <silent> <Backspace> :nohlsearch<CR>
-
 " 删除设置
 set backspace=eol,start,indent
 
 " 设置隐藏字符, 通过 set list 显示
 set listchars=tab:▸\ ,eol:¬
 
-" vim 类型文件设置折叠方式为 marker
-autocmd FileType vim set foldmethod=marker
+" 字体
+set guifont=FuraCode\ Nerd\ Font\ Mono\ 10
+
+if !isdirectory($HOME."/.undo_history")
+    call mkdir($HOME."/.undo_history", "", 0700)
+endif
+" undo 历史保存路径
+set undodir=~/.undo_history/
+" 开启保存 undo 历史功能
+set undofile
+
+" j/k在没有计数的时候按虚拟行移动，有计数的时候按实际行移动
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
+
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+nnoremap <silent> <Backspace> :nohl<CR>
 
 " ++++++++++++++++++++++++++++++++++++++++
 " +             快捷键配置               +
 " ++++++++++++++++++++++++++++++++++++++++
+
+" 修改leader键
+let mapleader = ';'
+let maplocalleader = ','
 
 " 绑定 jk <Esc>，这样就不用按角落里面的 <Esc>
 inoremap jk <Esc>
@@ -96,29 +108,9 @@ noremap L $
 " 交换 ' 和 ` 的功能
 nnoremap ' `
 nnoremap ` '
-
-" 使用超级用户权限编辑这个文件
-cmap w!! w !sudo tee >/dev/null %
-
-" 调整宽度
-cmap v= vertical resize +5<cr>
-cmap v- vertical resize -5<cr>
-cmap s= resize +5<cr>
-cmap s- resize -5<cr>
-
-" 修改leader键
-let mapleader = ';'
-let maplocalleader = ','
 noremap + ;
 noremap - ,
 
-if !isdirectory($HOME."/.undo_history")
-    call mkdir($HOME."/.undo_history", "", 0700)
-endif
-" undo 历史保存路径
-set undodir=~/.undo_history/
-" 开启保存 undo 历史功能
-set undofile
 
 " 使用 %% 扩展当前文件的路径
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -130,6 +122,8 @@ xnoremap & :&&<CR>
 " 命令行模式 Ctrl-j 下一条命令，Ctrl-k 上一条命令
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
+cnoremap <C-h> <Left>
+cnoremap <C-l> <Right>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
@@ -144,9 +138,20 @@ nnoremap <Leader>y yiw
 " 打开/关闭quickfix
 nnoremap <leader>q :cclose<cr>
 
-" 字体
-set guifont=FuraCode\ Nerd\ Font\ Mono\ 10
+" 使用超级用户权限编辑这个文件
+cmap w!! w !sudo tee >/dev/null %
 
+" 调整宽度
+cmap v= vertical resize +5<cr>
+cmap v- vertical resize -5<cr>
+cmap s= resize +5<cr>
+cmap s- resize -5<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                自动命令配置                                "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" 将光标设为上次退出时的位置
 autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
@@ -156,9 +161,8 @@ autocmd BufReadPost *
 command! -nargs=+ Cppman silent! call system("tmux split-window cppman " . expand(<q-args>))
 autocmd FileType cpp nnoremap <silent><buffer> K <Esc>:Cppman <cword><CR>
 
-if has("autocmd")
-    autocmd FileType c,cpp let b:autoformat_autoindent=0
-    autocmd BufNewFile *.cpp,*.c,*.h,*.hpp 0r ~/.license
-    " 使qss文件可以被css文件插件支持
-    autocmd BufNewFile,BufFilePre,BufRead *.qss set filetype=css
-endif
+autocmd BufNewFile *.cpp,*.c,*.h,*.hpp 0r ~/.license
+" 使qss文件可以被css文件插件支持
+autocmd BufNewFile,BufFilePre,BufRead *.qss set filetype=css
+" vim 类型文件设置折叠方式为 marker
+autocmd FileType vim set foldmethod=marker
