@@ -83,13 +83,6 @@ set undodir=~/.undo_history/
 " 开启保存 undo 历史功能
 set undofile
 
-" j/k在没有计数的时候按虚拟行移动，有计数的时候按实际行移动
-nnoremap <expr> j v:count ? 'j' : 'gj'
-nnoremap <expr> k v:count ? 'k' : 'gk'
-
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-nnoremap <silent> <Backspace> :nohl<CR>
-
 " ++++++++++++++++++++++++++++++++++++++++
 " +             快捷键配置               +
 " ++++++++++++++++++++++++++++++++++++++++
@@ -137,6 +130,13 @@ nnoremap <Leader>y yiw
 
 " 打开/关闭quickfix
 nnoremap <leader>q :cclose<cr>
+
+" j/k在没有计数的时候按虚拟行移动，有计数的时候按实际行移动
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
+
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+nnoremap <silent> <Backspace> :nohl<CR>
 
 " 使用超级用户权限编辑这个文件
 cmap w!! w !sudo tee >/dev/null %
