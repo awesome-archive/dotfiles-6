@@ -91,9 +91,6 @@ set undofile
 let mapleader = ';'
 let maplocalleader = ','
 
-" 绑定 jk <Esc>，这样就不用按角落里面的 <Esc>
-inoremap jk <Esc>
-
 "绑定大写的 HL 为行首和行尾的快捷键
 noremap H ^
 noremap L $
