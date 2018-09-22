@@ -122,6 +122,7 @@ Plug 'xyz1001/WebSearch.vim'
 
 " icons
 Plug 'ryanoasis/vim-devicons'
+Plug 'chrisbra/Recover.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
