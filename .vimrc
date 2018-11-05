@@ -66,8 +66,8 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'rhysd/clever-f.vim'
 Plug 'w0rp/ale'
-"Plug 'Shougo/echodoc.vim'
-Plug 'tenfyzhong/CompleteParameter.vim'
+Plug 'Shougo/echodoc.vim'
+"Plug 'tenfyzhong/CompleteParameter.vim'
 
 " syntax hightlight
 Plug 'octol/vim-cpp-enhanced-highlight'
@@ -163,6 +163,6 @@ source ~/.vim/pluginconfig/vim-smooth-scroll.vim
 source ~/.vim/pluginconfig/ale.vim
 source ~/.vim/pluginconfig/youdao-translater.vim
 source ~/.vim/pluginconfig/asyncrun.vim
-"source ~/.vim/pluginconfig/echodoc.vim
+source ~/.vim/pluginconfig/echodoc.vim
 source ~/.vim/pluginconfig/committia.vim
-source ~/.vim/pluginconfig/CompleteParameter.vim
+"source ~/.vim/pluginconfig/CompleteParameter.vim
