@@ -12,6 +12,8 @@
     proxy = socks5://127.0.0.1:1080
 [core]
     pager = diff-so-fancy | less --tabs=4 -RFX
+	autocrlf = input
+	safecrlf = true
 [color]
     ui = true
 [color "diff-highlight"]
@@ -26,3 +28,10 @@
     old = red bold
     new = green bold
     whitespace = red reverse
+[help]
+	autocorrect = -1
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[gui]
+	encoding = utf-8
