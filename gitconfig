@@ -6,9 +6,7 @@
     tool = icdiff
 [difftool "icdiff"]
     cmd = icdiff --highlight --line-numbers "$LOCAL" "$REMOTE"
-[https]
-    proxy = socks5://127.0.0.1:1080
-[http]
+[http "https://github.com"]
     proxy = socks5://127.0.0.1:1080
 [core]
     pager = diff-so-fancy | less --tabs=4 -RFX
