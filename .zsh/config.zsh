@@ -25,10 +25,7 @@ stty -ixon
 
 export ANDROID_HOME=$HOME/Android/Sdk
 
-export ANDROID_NDK_HOME=/opt/android-ndk/
-export PATH=$PATH:$ANDROID_NDK_HOME
-
-export ANDROID_TOOLCHAINS_HOME=$HOME/Android/android-toolchains-arm
-export PATH=$PATH:$ANDROID_TOOLCHAINS_HOME/bin
+export ANDROID_NDK_HOME=$HOME/Android/android-ndk-r16b
+export PATH=$PATH:$ANDROID_NDK_HOME/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin
 
 mkcd() { mkdir -p "$@" && cd "$@"; }
