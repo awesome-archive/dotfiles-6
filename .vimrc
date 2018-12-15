@@ -120,12 +120,14 @@ Plug 'xyz1001/WebSearch.vim'
 Plug 'google/vim-searchindex'
 
 " uml
-"Plug 'scrooloose/vim-slumlord'
-"Plug 'aklt/plantuml-syntax'
+Plug 'scrooloose/vim-slumlord'
+Plug 'aklt/plantuml-syntax'
 
 " icons
 Plug 'ryanoasis/vim-devicons'
 Plug 'chrisbra/Recover.vim'
+Plug 'weirongxu/plantuml-previewer.vim'
+Plug 'tyru/open-browser.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
