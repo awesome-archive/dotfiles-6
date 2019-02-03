@@ -20,3 +20,4 @@ alias ss="proxychains4 -q "
 
 alias tp="trash-put"
 alias te="trash-empty"
+alias rm="echo 'Dangerous command, trash-put instead automatically' && trash-put"
