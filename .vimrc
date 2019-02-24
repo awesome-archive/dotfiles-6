@@ -7,7 +7,6 @@
 " +         last update: 2017-04-08      +
 " ++++++++++++++++++++++++++++++++++++++++
 
-source ~/.vim/pluginconfig/vimcommon.vim
 
 " ++++++++++++++++++++++++++++++++++++++++
 " +             常用插件安装             +
@@ -61,7 +60,8 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " cpp dev
 Plug 'derekwyatt/vim-fswitch', {'for': ['cpp', 'c']}
-Plug 'Chiel92/vim-autoformat'
+"Plug 'Chiel92/vim-autoformat'
+Plug 'sbdchd/neoformat'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'ivalkeen/vim-ctrlp-tjump'
 Plug 'rhysd/clever-f.vim'
@@ -70,9 +70,8 @@ Plug 'Shougo/echodoc.vim'
 "Plug 'tenfyzhong/CompleteParameter.vim'
 
 " syntax hightlight
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'hail2u/vim-css3-syntax', {'for': ['css']}
 Plug 'artoj/qmake-syntax-vim', {'for': ['qmake']}
+Plug 'sheerun/vim-polyglot'
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -134,6 +133,8 @@ call plug#end()
 
 " Put your non-Plugin stuff after this line
 
+source ~/.vim/pluginconfig/vimcommon.vim
+
 " +++++++++++++++++++++++++++++++++++++++
 " +              插件配置               +
 " +++++++++++++++++++++++++++++++++++++++
@@ -159,7 +160,7 @@ source ~/.vim/pluginconfig/vim-gutentags.vim
 source ~/.vim/pluginconfig/easymotion.vim
 source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/rootignore.vim
-source ~/.vim/pluginconfig/vim-autoformat.vim
+source ~/.vim/pluginconfig/neoformat.vim
 source ~/.vim/pluginconfig/vim-easy-align.vim
 source ~/.vim/pluginconfig/vim-smooth-scroll.vim
 source ~/.vim/pluginconfig/ale.vim
@@ -167,4 +168,3 @@ source ~/.vim/pluginconfig/youdao-translater.vim
 source ~/.vim/pluginconfig/asyncrun.vim
 source ~/.vim/pluginconfig/echodoc.vim
 source ~/.vim/pluginconfig/committia.vim
-"source ~/.vim/pluginconfig/CompleteParameter.vim

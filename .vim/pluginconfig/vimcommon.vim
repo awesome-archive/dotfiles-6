@@ -154,12 +154,10 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
-" K to lookup current word in cppman
-command! -nargs=+ Cppman silent! call system("tmux split-window cppman " . expand(<q-args>))
-autocmd FileType cpp nnoremap <silent><buffer> K <Esc>:Cppman <cword><CR>
-
 autocmd BufNewFile *.cpp,*.c,*.h,*.hpp 0r ~/.license
-" 使qss文件可以被css文件插件支持
 autocmd BufNewFile,BufFilePre,BufRead *.qss set filetype=css
+autocmd BufNewFile,BufFilePre,BufRead *.ts set filetype=xml
+autocmd BufNewFile,BufFilePre,BufRead *.ui set filetype=xml
+autocmd BufNewFile,BufFilePre,BufRead *.qrc set filetype=xml
 " vim 类型文件设置折叠方式为 marker
 autocmd FileType vim set foldmethod=marker
