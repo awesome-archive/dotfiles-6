@@ -14,7 +14,7 @@ antigen bundle pip
 antigen bundle autojump
 antigen bundle command-not-found
 antigen bundle vi-mode
-antigen bundle z
+antigen bundle skywind3000/z.lua
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions src
