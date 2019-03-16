@@ -49,9 +49,11 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/vim-nerdtree_plugin_open'
 Plug 'majutsushi/tagbar' "需安装universal ctags，显示代码结构信息
+"Plug 'liuchengxu/vista.vim'
 Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky' "文件/函数查找
 Plug 'dyng/ctrlsf.vim'
 Plug 'terryma/vim-multiple-cursors'
+"Plug 'mg979/vim-visual-multi'
 Plug 'mileszs/ack.vim'
 
 " commenter
@@ -148,6 +150,7 @@ source ~/.vim/pluginconfig/doxygentoolkit.vim
 source ~/.vim/pluginconfig/fugitive.vim
 source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tagbar.vim
+"source ~/.vim/pluginconfig/vista.vim
 source ~/.vim/pluginconfig/tmuxline.vim
 source ~/.vim/pluginconfig/ultisnips.vim
 source ~/.vim/pluginconfig/visual-star.vim

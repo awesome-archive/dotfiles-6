@@ -25,3 +25,4 @@ antigen apply
 source $HOME/.zsh/config.zsh
 source $HOME/.zsh/alais.zsh
 source $HOME/.zsh/bindkey.zsh
+source /usr/share/fzf/completion.zsh
