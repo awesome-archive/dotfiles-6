@@ -151,6 +151,7 @@ source ~/.vim/pluginconfig/fugitive.vim
 source ~/.vim/pluginconfig/nerdtree.vim
 source ~/.vim/pluginconfig/tagbar.vim
 "source ~/.vim/pluginconfig/vista.vim
+source ~/.vim/pluginconfig/vim-multiple-cursors.vim
 source ~/.vim/pluginconfig/tmuxline.vim
 source ~/.vim/pluginconfig/ultisnips.vim
 source ~/.vim/pluginconfig/visual-star.vim
