@@ -119,6 +119,8 @@ Plug 'ianva/vim-youdao-translater'
 Plug 'vim-scripts/VisIncr'
 Plug 'xyz1001/WebSearch.vim'
 Plug 'google/vim-searchindex'
+Plug 'RRethy/vim-illuminate'
+
 
 " uml
 Plug 'scrooloose/vim-slumlord'
