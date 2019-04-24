@@ -72,7 +72,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'terryma/vim-smooth-scroll'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
@@ -127,7 +126,6 @@ source ~/.vim/pluginconfig/nerdcommenter.vim
 source ~/.vim/pluginconfig/rootignore.vim
 source ~/.vim/pluginconfig/neoformat.vim
 source ~/.vim/pluginconfig/vim-easy-align.vim
-source ~/.vim/pluginconfig/vim-smooth-scroll.vim
 source ~/.vim/pluginconfig/ale.vim
 source ~/.vim/pluginconfig/youdao-translater.vim
 source ~/.vim/pluginconfig/asyncrun.vim
