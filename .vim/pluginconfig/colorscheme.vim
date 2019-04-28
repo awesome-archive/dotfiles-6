@@ -2,7 +2,12 @@
 """""""""""""""
 syntax enable
 set background=dark
-colorscheme solarized
+if has('win32')
+    colorscheme solarized8_dark
+else
+    colorscheme solarized
+endif
+
 
 "set t_Co=256
 "set background=light

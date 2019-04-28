@@ -72,9 +72,6 @@ set backspace=eol,start,indent
 " 设置隐藏字符, 通过 set list 显示
 set listchars=tab:▸\ ,eol:¬
 
-" 字体
-set guifont=FuraCode\ Nerd\ Font\ Mono\ 10
-
 if !isdirectory($HOME."/.undo_history")
     call mkdir($HOME."/.undo_history", "", 0700)
 endif
@@ -143,6 +140,10 @@ cmap v= vertical resize +5<cr>
 cmap v- vertical resize -5<cr>
 cmap s= resize +5<cr>
 cmap s- resize -5<cr>
+
+if has('win32')
+    set shell=powershell
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                自动命令配置                                "
