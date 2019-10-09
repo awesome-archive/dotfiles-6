@@ -31,7 +31,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'aklt/plantuml-syntax'
 Plug 'altercation/vim-colors-solarized'
-Plug 'artoj/qmake-syntax-vim', {'for': ['qmake']}
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'chrisbra/Recover.vim'
 Plug 'christoomey/vim-tmux-navigator'
@@ -66,7 +65,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'sbdchd/neoformat'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/vim-slumlord'
+"Plug 'scrooloose/vim-slumlord'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'sheerun/vim-polyglot'
 Plug 'skywind3000/asyncrun.vim'
@@ -89,6 +88,8 @@ Plug 'w0rp/ale'
 Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'xyz1001/WebSearch.vim'
 Plug 'zhaohuaxishi/vim-ctrlp-cmdpalette'
+Plug 'Valloric/ListToggle'
+Plug 'mtdl9/vim-log-highlighting'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -117,7 +118,6 @@ source ~/.vim/pluginconfig/ultisnips.vim
 source ~/.vim/pluginconfig/visual-star.vim
 source ~/.vim/pluginconfig/youcompleteme.vim
 source ~/.vim/pluginconfig/fswitch.vim
-source ~/.vim/pluginconfig/cpp-enhanced-highlight.vim
 "source ~/.vim/pluginconfig/gundo.vim
 source ~/.vim/pluginconfig/markdown.vim
 source ~/.vim/pluginconfig/vim-gutentags.vim
