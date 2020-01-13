@@ -9,12 +9,15 @@ antigen theme robbyrussell
 #antigen theme arrow
 
 antigen bundle git
+antigen bundle extract
+antigen bundle colored-man-pages
+antigen bundle git
 antigen bundle sudo
 antigen bundle pip
 antigen bundle autojump
 antigen bundle command-not-found
 antigen bundle vi-mode
-antigen bundle z
+antigen bundle skywind3000/z.lua
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions src
@@ -25,3 +28,4 @@ antigen apply
 source $HOME/.zsh/config.zsh
 source $HOME/.zsh/alais.zsh
 source $HOME/.zsh/bindkey.zsh
+source /usr/share/fzf/completion.zsh

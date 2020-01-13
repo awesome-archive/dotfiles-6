@@ -72,9 +72,6 @@ set backspace=eol,start,indent
 " 设置隐藏字符, 通过 set list 显示
 set listchars=tab:▸\ ,eol:¬
 
-" 字体
-set guifont=FuraCode\ Nerd\ Font\ Mono\ 10
-
 if !isdirectory($HOME."/.undo_history")
     call mkdir($HOME."/.undo_history", "", 0700)
 endif
@@ -125,9 +122,6 @@ vnoremap <C-y> "+y
 " 复制
 nnoremap <Leader>y yiw
 
-" 打开/关闭quickfix
-nnoremap <leader>q :cclose<cr>
-
 " j/k在没有计数的时候按虚拟行移动，有计数的时候按实际行移动
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
@@ -144,6 +138,10 @@ cmap v- vertical resize -5<cr>
 cmap s= resize +5<cr>
 cmap s- resize -5<cr>
 
+if has('win32')
+    set shell=powershell
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                自动命令配置                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -154,12 +152,10 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
-" K to lookup current word in cppman
-command! -nargs=+ Cppman silent! call system("tmux split-window cppman " . expand(<q-args>))
-autocmd FileType cpp nnoremap <silent><buffer> K <Esc>:Cppman <cword><CR>
-
 autocmd BufNewFile *.cpp,*.c,*.h,*.hpp 0r ~/.license
-" 使qss文件可以被css文件插件支持
 autocmd BufNewFile,BufFilePre,BufRead *.qss set filetype=css
+autocmd BufNewFile,BufFilePre,BufRead *.ts set filetype=xml
+autocmd BufNewFile,BufFilePre,BufRead *.ui set filetype=xml
+autocmd BufNewFile,BufFilePre,BufRead *.qrc set filetype=xml
 " vim 类型文件设置折叠方式为 marker
 autocmd FileType vim set foldmethod=marker

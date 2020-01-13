@@ -23,7 +23,7 @@ let g:ale_linters = {
           \ 'javascript' : ['eslint'],
           \ 'json' : ['jsonlint'],
           \}
-let g:ale_cpp_cpplint_options = '--filter=-whitespace/indent,-build/c++11,-build/include,-runtime/references'
+let g:ale_cpp_cpplint_options = '--filter=-whitespace/indent,-build/c++11,-build/include,-runtime/references -build/header_guard'
 let g:ale_cpp_cppcheck_options = '--enable=all'
 let g:ale_python_flake8_options = '--max-line-length=80'
 let g:ale_markdown_mdl_options = '-r \~MD029,\~MD013 -w'

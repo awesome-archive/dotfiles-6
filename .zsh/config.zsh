@@ -26,6 +26,13 @@ stty -ixon
 export ANDROID_HOME=$HOME/Android/Sdk
 
 export ANDROID_NDK_HOME=$HOME/Android/android-ndk-r16b
-export PATH=$PATH:$ANDROID_NDK_HOME/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin
 
-mkcd() { mkdir -p "$@" && cd "$@"; }
+export LIBVA_DRIVER_NAME=iHD
+
+export PATH=$PATH:$HOME/Application
+
+function mkcd() { mkdir -p "$@" && cd "$@"; }
+
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ | tee -a .gitignore;}
+
+function caps() { setxkbmap -option ctrl:nocaps; xcape -e 'Control_L=Escape' }
